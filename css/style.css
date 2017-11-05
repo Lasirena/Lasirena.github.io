@@ -23,6 +23,10 @@ body {
 }
 
 .navbar a:hover {
+	background-color: #ededed !important;
+}
+
+.nav li.active a {
 	color: #ffffff !important;
 	background-color: #ef7c23 !important;
 }
