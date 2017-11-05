@@ -1,0 +1,279 @@
+/* PREV LINKS COLOUR: #337ab7; */
+
+/* NAVIGATION */
+
+.navbar {
+	/*background-color: #242424; 
+	border-bottom: 1px solid #8e66af; */
+	background-color: #fff;
+	border-bottom: none;
+	box-shadow: 0 0 5px #787878;
+}
+
+.navbar a {
+	/*color: #efefef !important;*/
+	color: #242424 !important;
+	text-transform: uppercase;
+	font-family: 'Roboto', light;
+}
+
+.navbar a:hover {
+	color: #ffffff !important;
+	background-color: #ef7c23 !important;
+}
+
+.navbar-header .navbar-brand {
+	color: #ffffff !important;
+	font-size: 1.6em;
+	padding: 9px 14px;
+}
+
+.navbar-header .navbar-brand:hover {
+	background-color: transparent !important;
+}
+
+.navbar-header .navbar-brand img {
+	height: 100%;
+	width: auto;
+}
+
+.navbar-header .navbar-toggle {
+	border: none !important;
+}
+
+.navbar-header .navbar-toggle:hover,
+.navbar-header .navbar-toggle:focus,
+.navbar-header .navbar-toggle:active {
+	background-color: transparent !important;
+}
+
+.navbar-header .navbar-toggle .icon-bar {
+	/*background-color: #ffffff;*/
+	background-color: #242424;
+}
+
+
+/* HEADER */
+
+.header {
+	padding: 300px 0 260px;
+	background: url(../img/photobg.jpg) no-repeat center center;
+	/*background-color: #405164;*/
+	background-size: cover;
+	width: 100%;
+	border-bottom: 2px solid #efefef;
+	text-align: center;
+}
+
+.header h1 {
+	color: #ffffff;
+	font-size: 5em; /* 4 for roboto */
+	font-family: 'Dancing Script', bold; /* Roboto medium */
+	text-shadow: 1px 1px 2px black;
+	padding-bottom: 10px;
+	/* text-decoration: uppercase; */
+}
+
+.header p {
+	font-family: 'Roboto', light;
+	font-size: 1.5em;
+	color: #ffffff;
+	text-shadow: 0 0 1px black;
+}
+
+/* ABOUT ME */
+
+.about-me {
+	padding-top: 40px;
+	font-family: 'Roboto', light;
+}
+
+.about-me h1 {
+	font-size: 1.9em;
+	color: #ef7c23;
+	padding-bottom: 25px;
+}
+
+.about-me h2 {
+	font-size: 1.2em;
+	color: #242424;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+}
+
+.about-me a {
+	color: #ef7c23;
+}
+
+.about-me a:hover {
+	color: #CE532A;
+}
+
+.about-me .about-me-image {
+	padding-top: 20px;
+	text-align: center;
+}
+
+.about-me .about-centered {
+	padding: 20px 0 40px;
+	text-align: center;
+}
+
+.about-me .fa {
+	padding-right: 8px;
+}
+
+.about-me hr {
+	width: 60%;
+}
+
+/*
+-------------------
+PROJECTS
+-------------------
+*/
+
+.projects {
+	/*background-color: #242424;*/
+	background: url(../img/bg-projects.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	padding: 20px 0 50px;
+	font-family: 'Roboto', light;
+}
+
+.projects h1 {
+	font-size: 1.9em;
+	color: #ef7c23;
+	padding-bottom: 25px;
+	text-transform: uppercase;
+}
+
+.projects p {
+	color: #efefef;
+}
+
+.projects a {
+	color: #ef7c23;
+}
+
+.projects a:hover {
+	text-decoration: none;
+	color: #CE532A;
+}
+
+.projects p:last-of-type {
+	padding-top: 30px;
+}
+
+.projects .projects-highlight {
+	color: #ef7c23;
+}
+
+/*
+-------------------
+CONTACT
+-------------------
+*/
+
+.contact {
+	text-align: center;
+	padding: 100px 0 160px;
+	font-family: 'Roboto', light;
+}
+
+.contact h1 {
+	font-size: 2.2em;
+	color: #ef7c23;
+	/*color: #8e66af; */
+	padding-bottom: 25px;
+	text-transform: uppercase;
+}
+
+.contact .fa {
+	padding-right: 5px;
+}
+
+.contact .fa .fa-3x {
+	padding-right: 10px;
+}
+
+/* FOOTER */
+
+.footer {
+	background-color: #242424;
+	color: #fff;
+	padding: 30px 0 30px;
+	font-family: 'Roboto', light;
+}
+
+.footer h1 {
+	font-size: 1.4em;
+}
+
+.footer .footer-right {
+	text-align: right;
+}
+
+.footer img {
+	height: 100%;
+	width: auto;
+	padding-bottom: 20px;
+}
+
+/* CUSTOM BOOTSTRAP OVERRIDES */
+
+.btn {
+	text-transform: uppercase !important;
+	font-family: 'Roboto', medium;
+}
+
+.btn-transparent {	
+	color: #ffffff; 
+	background-color: transparent;
+	border: 2px solid #ef7c23;
+}
+
+.btn-transparent:hover {
+	background-color: #CE532A;
+	border-color: #CE532A;
+	color: #fff;
+}
+
+.btn-lightblue {
+	color: #fff;
+	background-color: #ef7c23;
+}
+
+.btn-lightblue:hover {
+	color: #fff;
+	background-color: #CE532A;
+	border-color: #CE532A;
+	/*border-color: #5e4575;*/
+}
+
+
+
+
+/* 
+---------------------
+MEDIA QUERIES 
+---------------------
+*/
+
+@media(max-width: 768px) {
+
+	.header {
+		padding-top: 30%;
+		padding-bottom: 20%;
+		text-align: center;
+	}
+
+	.header h1 {
+		font-size: 4em; /* 3 for roboto */
+	}
+
+	.footer, .footer .footer-right {
+		text-align: center;
+	}
+}
