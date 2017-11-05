@@ -1,5 +1,10 @@
 /* PREV LINKS COLOUR: #337ab7; */
 
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
 /* NAVIGATION */
 
 .navbar {
@@ -14,7 +19,7 @@
 	/*color: #efefef !important;*/
 	color: #242424 !important;
 	text-transform: uppercase;
-	font-family: 'Roboto', light;
+	font-family: 'Roboto', sans-serif;
 }
 
 .navbar a:hover {
@@ -75,7 +80,8 @@
 }
 
 .header p {
-	font-family: 'Roboto', light;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
 	font-size: 1.5em;
 	color: #ffffff;
 	text-shadow: 0 0 1px black;
@@ -85,13 +91,14 @@
 
 .about-me {
 	padding-top: 40px;
-	font-family: 'Roboto', light;
+	font-family: 'Roboto', sans-serif;
 }
 
 .about-me h1 {
 	font-size: 1.9em;
 	color: #ef7c23;
 	padding-bottom: 25px;
+	text-align: center;
 }
 
 .about-me h2 {
@@ -99,6 +106,10 @@
 	color: #242424;
 	text-transform: uppercase;
 	padding-bottom: 5px;
+}
+
+.about-me blockquote {
+	font-size: 1.1em;
 }
 
 .about-me a {
@@ -110,7 +121,6 @@
 }
 
 .about-me .about-me-image {
-	padding-top: 20px;
 	text-align: center;
 }
 
@@ -138,15 +148,22 @@ PROJECTS
 	background: url(../img/bg-projects.jpg) no-repeat center center;
 	background-size: cover;
 	width: 100%;
-	padding: 20px 0 50px;
-	font-family: 'Roboto', light;
+	padding: 40px 0 120px;
+	font-family: 'Roboto', sans-serif;
 }
 
 .projects h1 {
 	font-size: 1.9em;
 	color: #ef7c23;
-	padding-bottom: 25px;
+	padding-bottom: 40px;
 	text-transform: uppercase;
+	text-align: center;
+	text-shadow: 0 0 1px black;
+}
+
+.projects h3 {
+	text-align: center;
+	text-shadow: 0 0 1px black;
 }
 
 .projects p {
@@ -179,7 +196,7 @@ CONTACT
 .contact {
 	text-align: center;
 	padding: 100px 0 160px;
-	font-family: 'Roboto', light;
+	font-family: 'Roboto', sans-serif;
 }
 
 .contact h1 {
@@ -198,13 +215,17 @@ CONTACT
 	padding-right: 10px;
 }
 
-/* FOOTER */
+/* 
+------------------
+FOOTER
+------------------
+ */
 
 .footer {
-	background-color: #242424;
+	background-color: #212121;
 	color: #fff;
 	padding: 30px 0 30px;
-	font-family: 'Roboto', light;
+	font-family: 'Roboto', sans-serif;
 }
 
 .footer h1 {
@@ -221,11 +242,27 @@ CONTACT
 	padding-bottom: 20px;
 }
 
-/* CUSTOM BOOTSTRAP OVERRIDES */
+.footer a {
+	color: #ef7c23;
+}
+
+.footer a:hover {
+	color: #CE532A;
+}
+
+
+
+
+/* 
+---------------------------------
+CUSTOM BOOTSTRAP OVERRIDES 
+---------------------------------
+*/
 
 .btn {
 	text-transform: uppercase !important;
-	font-family: 'Roboto', medium;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
 }
 
 .btn-transparent {	
@@ -271,6 +308,18 @@ MEDIA QUERIES
 
 	.header h1 {
 		font-size: 4em; /* 3 for roboto */
+	}
+
+	.about-me {
+		text-align: center;
+	}
+
+	.about-me .about-me-image {
+		padding-top: 7%;
+	}
+
+	.projects p:last-of-type {
+		padding-bottom: 10%;
 	}
 
 	.footer, .footer .footer-right {
