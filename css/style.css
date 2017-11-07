@@ -334,6 +334,11 @@ MEDIA QUERIES
 		padding-bottom: 10%;
 	}
 
+	.contact h1 {
+		font-size: 1.9em;
+		letter-spacing: 7px;
+	}
+
 	.footer, .footer .footer-right {
 		text-align: center;
 	}
