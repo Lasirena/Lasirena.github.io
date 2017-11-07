@@ -121,13 +121,41 @@ body {
 	font-size: 1.1em;
 }
 
-.about-me a {
-	color: #ef7c23;
+/* icon colours */
+
+.about-me .github {
+	color: #171516;
 }
 
-.about-me a:hover {
-	color: #CE532A;
+.about-me .github:hover {
+	color: #5e4e56;
 }
+
+.about-me .linkedin {
+	color: #007bb6;
+}
+
+.about-me .linkedin:hover {
+	color: #4db8ea;
+}
+
+.about-me .twitter {
+	color: #00aced;
+}
+
+.about-me .twitter:hover {
+	color: #0092d6;
+}
+
+.about-me .instagram {
+	color: #f75d6f;
+}
+
+.about-me .instagram:hover {
+	color: #ff7b00;
+}
+
+/* icon colours end */
 
 .about-me .about-me-image {
 	text-align: center;
@@ -219,13 +247,21 @@ CONTACT
 	text-transform: uppercase;
 }
 
+.contact a {
+	color: #ef7c23;
+}
+
+.contact a:hover {
+	color: #CE532A;
+}
+
 .contact .fa {
 	padding-right: 5px;
 }
 
-.contact .fa .fa-3x {
+/*.contact .fa .fa-3x {
 	padding-right: 10px;
-}
+}*/
 
 /* 
 ------------------
@@ -302,6 +338,15 @@ CUSTOM BOOTSTRAP OVERRIDES
 	border-color: #CE532A;
 	/*border-color: #5e4575;*/
 }
+
+
+
+
+/*
+-----------------------------
+CUSTOM FONT AWESOME OVERRIDES
+-----------------------------
+*/
 
 
 
