@@ -186,7 +186,7 @@ PROJECTS
 	background-size: cover;
 	background-attachment: fixed;
 	width: 100%;
-	padding: 40px 0 120px;
+	padding: 40px 0 60px;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -224,6 +224,10 @@ PROJECTS
 
 .projects .projects-highlight {
 	color: #ef7c23;
+}
+
+.projects .row.project-row {
+	padding-bottom: 40px;
 }
 
 /*
@@ -378,6 +382,10 @@ MEDIA QUERIES
 
 	.projects p:last-of-type {
 		padding-bottom: 10%;
+	}
+
+	.projects .row.project-row {
+		padding-bottom: 0px;
 	}
 
 	.contact h1 {
