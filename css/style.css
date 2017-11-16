@@ -1,5 +1,12 @@
 /* PREV LINKS COLOUR: #337ab7; */
 
+/* TRANSITIONS */
+
+a {
+	transition-duration: 0.6s;
+}
+
+
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
@@ -317,6 +324,7 @@ CUSTOM BOOTSTRAP OVERRIDES
 	font-size: 1.3em;
 	font-weight: 500;
 	border-radius: 0;
+	transition-duration: 0.6s;
 }
 
 .btn-transparent {	
