@@ -35,7 +35,7 @@ body {
 
 .nav li.active a {
 	color: #ffffff !important;
-	background-color: #ef7c23 !important;
+	background-color: #00BCD4 !important;
 }
 
 .navbar-header .navbar-brand {
@@ -75,8 +75,8 @@ body {
 	/*padding: 300px 0 260px;*/
 	padding: 20% 0 20%;
 	/*height: 100vh;*/
-	background: url(../img/photobg.jpg) no-repeat center center;
-	background-image: url(../img/photobg.jpg);
+	background: url(../img/hackedited.jpg) no-repeat center center;
+	background-image: url(../img/hackedited.jpg);
 	background-attachment: fixed;
 
 	background-size: cover;
@@ -112,7 +112,7 @@ body {
 .about-me h1 {
 	font-size: 1.9em;
 	letter-spacing: 10px;
-	color: #ef7c23;
+	color: #00BCD4;
 	padding-bottom: 25px;
 	text-align: center;
 }
@@ -200,7 +200,7 @@ PROJECTS
 .projects h1 {
 	font-size: 1.9em;
 	letter-spacing: 10px;
-	color: #ef7c23;
+	color: #00BCD4;
 	padding-bottom: 40px;
 	text-transform: uppercase;
 	text-align: center;
@@ -217,12 +217,12 @@ PROJECTS
 }
 
 .projects a {
-	color: #ef7c23;
+	color: #00BCD4;
 }
 
 .projects a:hover {
 	text-decoration: none;
-	color: #CE532A;
+	color: #0b86af;
 }
 
 .projects p:last-of-type {
@@ -230,7 +230,7 @@ PROJECTS
 }
 
 .projects .projects-highlight {
-	color: #ef7c23;
+	color: #00BCD4;
 }
 
 .projects .row.project-row {
@@ -252,18 +252,18 @@ CONTACT
 .contact h1 {
 	font-size: 2.2em;
 	letter-spacing: 15px;
-	color: #ef7c23;
+	color: #00BCD4;
 	/*color: #8e66af; */
 	padding-bottom: 25px;
 	text-transform: uppercase;
 }
 
 .contact a {
-	color: #ef7c23;
+	color: #00BCD4;
 }
 
 .contact a:hover {
-	color: #CE532A;
+	color: #0b86af;
 }
 
 .contact .fa {
@@ -273,6 +273,41 @@ CONTACT
 /*.contact .fa .fa-3x {
 	padding-right: 10px;
 }*/
+
+
+/*
+------------------
+HACKATHONS
+------------------
+*/
+
+.hackathons {
+	background: url(../img/bg2.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	padding: 40px 0 260px;
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+}
+
+.hackathons h1 {
+	font-size: 1.9em;
+	letter-spacing: 10px;
+	color: #00BCD4;
+	padding-bottom: 25px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.hackathons p{
+	padding: 50px 0 50px;
+}
+
+.hackathons .table thead {
+	color: #00BCD4;
+	text-transform: uppercase;
+}
 
 /* 
 ------------------
@@ -302,11 +337,11 @@ FOOTER
 }
 
 .footer a {
-	color: #ef7c23;
+	color: #00BCD4;
 }
 
 .footer a:hover {
-	color: #CE532A;
+	color: #0b86af;
 }
 
 
@@ -330,24 +365,24 @@ CUSTOM BOOTSTRAP OVERRIDES
 .btn-transparent {	
 	color: #ffffff; 
 	background-color: transparent;
-	border: 2px solid #ef7c23;
+	border: 2px solid #00BCD4;
 }
 
 .btn-transparent:hover {
-	background-color: #CE532A;
-	border-color: #CE532A;
+	background-color: #0b86af;
+	border-color: #0b86af;
 	color: #fff;
 }
 
 .btn-lightblue {
 	color: #fff;
-	background-color: #ef7c23;
+	background-color: #00BCD4;
 }
 
 .btn-lightblue:hover {
 	color: #fff;
-	background-color: #CE532A;
-	border-color: #CE532A;
+	background-color: #0b86af;
+	border-color: #0b86af;
 	/*border-color: #5e4575;*/
 }
 
