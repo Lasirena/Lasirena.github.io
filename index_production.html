@@ -66,124 +66,156 @@
             console.log("clicked on game element");
             var container = document.getElementById("projects");
             container.innerHTML = `
-            <div class="container projects-display">
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <h1>My Work</h1>
-            </div>
-        </div>
-        
-        <div class="row bottom-margins">
-          <div class="col-lg-12 col-md-12">
-            <ul class="list-inline">
-              <li><a id="link-projects-art" class="btn btn-transparent btn-md">Art</a></li>
-              <li><a id="link-projects-prod" class="btn btn-transparent btn-md">Production</a></li>
-              <li><a id="link-projects-games" class="btn btn-lightblue btn-md">Games</a></li>
-            </ul>
-          </div>
-        </div>
-        
-        <!-- PROJECT 1 -->
-
-        <div class="row project-content vertical-align">
-          <div class="col-lg-4 col-md-4">
-            <a href="https://lasirena.itch.io/torrheim"><img class="img-responsive" src="img/games/01.png" alt="Customizing Snaps Prototype assets with ProBuilder"></a>
-          </div>
-
-          <div class="col-lg-8 col-md-8">
-            <h3>Torrheim - a 2D narrative game</h3>
-            <h2>Global Game Jam (2019)</h2>
-            <p>I worked on this Unity project with my colleague at the time during Global Game Jam. During the jam, I wanted to focus on producing art assets. I made all the 2D assets and animations, including characters, environments, props, and UI. They can be seen on my Artstation page.</p>
-          </div>
-        </div>
-
-        <!-- PROJECT 2 -->
-
-        <div class="row project-content vertical-align">
-          <div class="col-lg-4 col-md-4">
-            <a href="https://github.com/Lasirena/Hacksussex-3D-Fighter"><img class="img-responsive" src="img/games/02.jpg" alt="Customizing Snaps Prototype assets with ProBuilder"></a>
-          </div>
-  
-          <div class="col-lg-8 col-md-8">
-            <h3>3D Fighter</h3>
-            <h2>Hacksussex (2017)</h2>
-            <p>This was a small fighter-type game I ended up making by myself in Unity over the course of Hacksussex 2017. A very simple 2-player game which let you fight each other with 2 controllers. Assets were sourced from the Asset Store.</p>
-          </div>
-        </div>
-
-        <!-- PROJECT 3 -->
-
-        <div class="row project-content vertical-align">
-            <div class="col-lg-4 col-md-4">
-              <a href="https://github.com/Lasirena/Invoker-GGJ17"><img class="img-responsive" src="img/games/03.png" alt="Customizing Snaps Prototype assets with ProBuilder"></a>
-            </div>
-    
-            <div class="col-lg-8 col-md-8">
-              <h3>Invoker - a VR game</h3>
-              <h2>Global Game Jam (2017)</h2>
-              <p>Developed in Unity with a team of four, this was my very first game jam project. We put together a Virtual Reality game using a LeapMotion controller which scanned the movement and position of each finger, allowing the player to cast spells with specific gestures in order to fight off waves of enemy skeletons.</p>
-            </div>
-          </div>
-
-        <!-- PROJECT 4 -->
-
-        <div class="row project-content vertical-align">
-            <div class="col-lg-4 col-md-4">
-              <a href="https://github.com/Lasirena/StarFall-Kombat"><img class="img-responsive" src="img/games/04.jpg" alt="Customizing Snaps Prototype assets with ProBuilder"></a>
-            </div>
-    
-            <div class="col-lg-8 col-md-8">
-              <h3>StarFall Kombat - Asteroids-inspired shooter</h3>
-              <h2>Personal Project (2016) </h2>
-              <p>One of my very first game development projects, this 2D asteroids-like shooter was developed in Java using Processing. The game is named after the three other titles from which I have used a couple of assets, solely for educational purposes: Starcraft, Fallout, and Mortal Kombat.</p>
-            </div>
-          </div>
-      </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                    <h1><a id="link-projects-art">Back to art projects</a></h1>
+                  </div>
+                </div>
+              </div>
             `;
           } 
           
           else if (e.target && e.target.id == "link-projects-art") {
             var container = document.getElementById("projects");
             container.innerHTML = `
-            <div class="container projects-display">
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <h1>My Work</h1>
-            </div>
-        </div>
-        
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <ul class="list-inline">
-              <li><a id="link-projects-art" class="btn btn-lightblue btn-md">Art</a></li>
-              <li><a id="link-projects-prod" class="btn btn-transparent btn-md">Production</a></li>
-              <li><a id="link-projects-games" class="btn btn-transparent btn-md">Games</a></li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="row vertical-align">
-          <div class="col-lg-3 col-md-3">
-            <!-- 
-            <a href="https://alicehintonjones.artstation.com" class="twitter"><i class="fab fa-artstation fa-10x" aria-hidden="true"></i></a>
-            -->
-            <a href="https://alicehintonjones.artstation.com"><img class="img-responsive" src="img/artstation.png" alt="Artstation"></a>
-          </div>
-
-          <div class="col-lg-9 col-md-9">
-            <p>Please find my complete artist portfolio on <a href="https://alicehintonjones.artstation.com" class = "in-text-link">Artstation.</a></p>
-            <p>In the past, I have worked with both 2D and 3D digital art, including Concept Art, Sculpting, Retopology, Modeling and Texturing.</p>
-            <p>I've also been working on some Realtime VFX lately and as part of my work at Unity.</p>
-          </div>
-        </div>
-
-      </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                    <h1><a id="link-projects-games">Back to game projects</a></h1>
+                  </div>
+                </div>
+              </div>
             `;
           }
 
           else if (e.target && e.target.id == "link-projects-prod") {
             var container = document.getElementById("projects");
-            container.innerHTML = `<div class="container projects-display">
+            container.innerHTML = `
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                    <h1><a id="link-projects-art">My Work</a></h1>
+                  </div>
+                </div>
+              </div>
+            `;
+          }
+        });
+      }
+    </script>
+  </head>
+  <body data-spy="scroll" data-target="#main-navbar" data-offset="70">
+
+  
+    <!-- NAVBAR -->
+
+    <div id="main-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <a class="navbar-brand" href="http://alicehintonjones.com"><img alt="Alice Hinton-Jones" src="img/logodark.png"></a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#projects">My work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR-END -->
+
+
+    <!-- HEADER -->
+
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+              <h1>Alice Hinton-Jones</h1>
+              <p>Hey, I'm Alice! Formerly an Evangelist for Unity, I'm currently seeking junior artist opportunities.</p>
+  
+              <ul class="list-inline">
+                <li><a href="#contact" class="btn btn-lightblue btn-md">Get in touch</a></li>
+                <li><a href="#projects" class="btn btn-transparent btn-md">My Work</a></li>
+              </ul>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER-END -->
+
+
+    <!-- ABOUT ME -->
+
+    <div class="about-me" id="about-me">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-lg-12 col-md-12">
+    				<h1>ABOUT ME</h1>
+    			</div>
+    		</div>
+
+    		<div class="row">
+
+	          <div class="col-lg-8 col-md-8">
+              <p><blockquote><em>Developer, Artist, and a big fan of engaging game narratives.</em></blockquote></p>
+              
+                <p>With a year of games industry experience under my belt as a Technical Evangelist for Unity, I am looking for opportunities to grow and develop as a games artist.</p>
+
+                <p>I am currently in my graduate year of a Computer Science and Games Development course at City, University of London.</p>
+
+                <p>I have both a strong background in programming (C#, C++) as well as an unending passion for art which I have focused on developing in my personal time throughout the years.</p>
+
+                <p>Additionally, my time as an Evangelist provided me with a lot of valuable skills when it comes to content production, product presentation, and technical marketing.</p>
+                
+                <p>Check out my portfolio section below for an overview of what I can do for you!</p>
+	          </div>
+
+            <div class="col-lg-4 col-md-4 about-me-image">
+              <img class="img-circle" src="img/alice1sm.jpg">
+            </div>
+
+	        </div>
+
+          <div class="row">
+
+            <div class="col-lg-12 col-md-12 about-centered">
+              <hr>
+              <h2>Find me on social media:</h2>
+              <ul class="list-inline">
+                <li><a href="https://artstation.com/alicehintonjones" class="twitter"><i class="fab fa-artstation fa-3x" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/Lasirena" class="github"><i class="fab fa-github fa-3x" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/aliceon/" class="linkedin"><i class="fab fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/AliceHintonJ" class="twitter"><i class="fab fa-twitter fa-3x" aria-hidden="true"></i></a></li>
+                <!-- insta <li><a href="https://www.instagram.com/alicehintonjones/" class="instagram"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li> -->
+              </ul>
+
+            </div>
+
+          </div>
+      </div>
+    </div>
+
+    <!-- ABOUT ME-END -->
+
+    <!-- PROJECTS PROD -->
+
+    <div class="projects" id="projects">
+
+      <div class="container projects-display">
         <div class="row">
             <div class="col-lg-12 col-md-12">
                 <h1>My Work</h1>
@@ -386,150 +418,7 @@
         </div>
 
       </div>
-            `;
-          }
-        });
-      }
-    </script>
-  </head>
-  <body data-spy="scroll" data-target="#main-navbar" data-offset="70">
 
-  
-    <!-- NAVBAR -->
-
-    <div id="main-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          
-          <a class="navbar-brand" href="http://alicehintonjones.com"><img alt="Alice Hinton-Jones" src="img/logodark.png"></a>
-        </div>
-
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about-me">About me</a></li>
-            <li><a href="#projects">My work</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- NAVBAR-END -->
-
-
-    <!-- HEADER -->
-
-    <div class="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-              <h1>Alice Hinton-Jones</h1>
-              <p>Hey, I'm Alice! Formerly an Evangelist for Unity, I'm currently seeking junior artist opportunities.</p>
-  
-              <ul class="list-inline">
-                <li><a href="#contact" class="btn btn-lightblue btn-md">Get in touch</a></li>
-                <li><a href="#projects" class="btn btn-transparent btn-md">My Work</a></li>
-              </ul>
-            </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- HEADER-END -->
-
-
-    <!-- ABOUT ME -->
-
-    <div class="about-me" id="about-me">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-lg-12 col-md-12">
-    				<h1>ABOUT ME</h1>
-    			</div>
-    		</div>
-
-    		<div class="row">
-
-	          <div class="col-lg-8 col-md-8">
-              <p><blockquote><em>Developer, Artist, and a big fan of engaging game narratives.</em></blockquote></p>
-              
-                <p>With a year of games industry experience under my belt as a Technical Evangelist for Unity, I am looking for opportunities to grow and develop as a games artist.</p>
-
-                <p>I am currently in my graduate year of a Computer Science and Games Development course at City, University of London.</p>
-
-                <p>I have both a strong background in programming (C#, C++) as well as an unending passion for art which I have focused on developing in my personal time throughout the years.</p>
-
-                <p>Additionally, my time as an Evangelist provided me with a lot of valuable skills when it comes to content production, product presentation, and technical marketing.</p>
-                
-                <p>Check out my portfolio section below for an overview of what I can do for you!</p>
-	          </div>
-
-            <div class="col-lg-4 col-md-4 about-me-image">
-              <img class="img-circle" src="img/alice1sm.jpg">
-            </div>
-
-	        </div>
-
-          <div class="row">
-
-            <div class="col-lg-12 col-md-12 about-centered">
-              <hr>
-              <h2>Find me on social media:</h2>
-              <ul class="list-inline">
-                <li><a href="https://artstation.com/alicehintonjones" class="twitter"><i class="fab fa-artstation fa-3x" aria-hidden="true"></i></a></li>
-                <li><a href="https://github.com/Lasirena" class="github"><i class="fab fa-github fa-3x" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/aliceon/" class="linkedin"><i class="fab fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
-                <li><a href="https://twitter.com/AliceHintonJ" class="twitter"><i class="fab fa-twitter fa-3x" aria-hidden="true"></i></a></li>
-                <!-- insta <li><a href="https://www.instagram.com/alicehintonjones/" class="instagram"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li> -->
-              </ul>
-
-            </div>
-
-          </div>
-      </div>
-    </div>
-
-    <!-- ABOUT ME-END -->
-
-    <!-- PROJECTS -->
-
-    <div class="projects" id="projects">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <h1>My Work</h1>
-          </div>
-        </div>
-        
-        <div class="row project-row">
-
-          <div class="col-lg-4 col-md-4">
-            <div class="project-block art" id="link-projects-art">
-              <h2>Art</h2>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4">
-            <div class="project-block production" id="link-projects-prod">
-              <h2>Production</h2>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4">
-            <div class="project-block games" id="link-projects-games">
-              <h2>Games</h2>
-            </div>
-          </div>
-
-        </div>
-      </div>
     </div>
 
     <!-- PROJECTS-END -->

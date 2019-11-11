@@ -1,11 +1,31 @@
 /* PREV LINKS COLOUR: #337ab7; */
 
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.horizontal-align {
+	text-align: center;
+}
+
+.bottom-margins {
+	margin-bottom: 3%;
+}
+
+.in-text-link {
+	color: #00BCD4;
+}
+
+.in-text-link:hover {
+	color: #0b86af;
+}
+
 /* TRANSITIONS */
 
 a {
 	transition-duration: 0.6s;
 }
-
 
 body {
 	font-family: 'Roboto', sans-serif;
@@ -73,10 +93,10 @@ body {
 
 .header {
 	/*padding: 300px 0 260px;*/
-	padding: 20% 0 20%;
+	padding: 10% 0 10%;
 	/*height: 100vh;*/
-	background: url(../img/hackedited.jpg) no-repeat center center;
-	background-image: url(../img/hackedited.jpg);
+	background: url(../img/unitybg.jpg) no-repeat center center;
+	background-image: url(../img/unitybg.jpg);
 	background-attachment: fixed;
 
 	background-size: cover;
@@ -146,11 +166,11 @@ body {
 	color: #4db8ea;
 }
 
-.about-me .twitter {
+.twitter {
 	color: #00aced;
 }
 
-.about-me .twitter:hover {
+.twitter:hover {
 	color: #0092d6;
 }
 
@@ -189,6 +209,7 @@ PROJECTS
 
 .projects {
 	/*background-color: #242424;*/
+	z-index: -2;
 	background: url(../img/bg-projects.jpg) no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -208,25 +229,14 @@ PROJECTS
 }
 
 .projects h3 {
-	text-align: center;
+	color: #00BCD4;
 	text-shadow: 0 0 1px black;
+	padding-top: 0;
+	margin-top: 0;
 }
 
 .projects p {
 	color: #efefef;
-}
-
-.projects a {
-	color: #00BCD4;
-}
-
-.projects a:hover {
-	text-decoration: none;
-	color: #0b86af;
-}
-
-.projects p:last-of-type {
-	padding-top: 30px;
 }
 
 .projects .projects-highlight {
@@ -235,6 +245,106 @@ PROJECTS
 
 .projects .row.project-row {
 	padding-bottom: 40px;
+}
+
+.projects .project-block {
+	position: relative;
+	padding: 50% 0 130%;
+	margin-bottom: 15%;
+	width: 100%;
+	border: #d8d8d8 solid 2px;
+	transition: transform 0.5s ease-in-out;
+}
+
+.projects .project-block:hover {
+	transform: scale(1.07);
+}
+
+.projects .project-block::before {
+	z-index: -1;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: url("../img/projects_prod01.png") fixed center;
+	opacity: 0;
+	transition: opacity 0.7s ease-in-out;
+}
+
+.projects .project-block.production {
+	background: url("../img/projects_prod01_opacity.png") center;
+}
+
+.projects .project-block.art {
+	background: url("../img/projects_games_opacity.png") center;
+}
+
+.projects .project-block.games {
+	background: url("../img/projects_art_opacity.png") center;
+}
+
+.projects .project-block.art::before {
+	background: url("../img/projects_art.png") fixed center;
+}
+
+.projects .project-block.games::before {
+	background: url("../img/projects_games.png") fixed center;
+}
+
+.projects .project-block.two-line {
+	padding: 84.17% 0;
+}
+
+.projects .project-block:hover::before {
+	opacity: 1;
+}
+
+.projects h2 {
+	font-size: 2.5em;
+	line-height: 120%;
+	color: #d8d8d8;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/*
+-------------------
+PROJECTS DISPLAY
+-------------------
+*/
+
+.navbar-row {
+	margin-bottom: 2%;
+}
+
+.projects-display p {
+	font-size: 1.5em;
+}
+
+.projects-display .project-content {
+	margin-bottom: 2%;
+}
+
+.projects .projects-display h2 {
+	font-size: 1.2em;
+	color:#fff;
+	display: inline-block;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 2%;
+}
+
+
+.projects-display h4 {
+	font-size: 1.7em;
+	letter-spacing: 5px;
+	color: #fff;
+	margin-bottom: 2%;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 /*
@@ -273,41 +383,6 @@ CONTACT
 /*.contact .fa .fa-3x {
 	padding-right: 10px;
 }*/
-
-
-/*
-------------------
-HACKATHONS
-------------------
-*/
-
-.hackathons {
-	background: url(../img/bg2.jpg) no-repeat center center;
-	background-size: cover;
-	background-attachment: fixed;
-	width: 100%;
-	padding: 40px 0 260px;
-	font-family: 'Roboto', sans-serif;
-	color: #ffffff;
-}
-
-.hackathons h1 {
-	font-size: 1.9em;
-	letter-spacing: 10px;
-	color: #00BCD4;
-	padding-bottom: 25px;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-.hackathons p{
-	padding: 50px 0 50px;
-}
-
-.hackathons .table thead {
-	color: #00BCD4;
-	text-transform: uppercase;
-}
 
 /* 
 ------------------
