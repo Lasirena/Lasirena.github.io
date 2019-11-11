@@ -258,6 +258,7 @@ PROJECTS
 
 .projects .project-block:hover {
 	transform: scale(1.07);
+	cursor: pointer;
 }
 
 .projects .project-block::before {
