@@ -111,8 +111,8 @@ HEADER
 	/*padding: 300px 0 260px;*/
 	padding: 10% 0 10%;
 	/*height: 100vh;*/
-	background: url(../img/unitybg.jpg) no-repeat center center;
-	background-image: url(../img/unitybg.jpg);
+	background: url(../img/spring_bg.jpg) no-repeat center center;
+	background-image: url(../img/spring_bg.jpg);
 	background-attachment: fixed;
 
 	background-size: cover;
@@ -230,7 +230,7 @@ PROJECTS
 .projects {
 	/*background-color: #242424;*/
 	z-index: -2;
-	background: url(../img/bg-projects.jpg) no-repeat center center;
+	background: url(../img/bg_projects_alt.jpg) no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
 	width: 100%;
@@ -295,15 +295,15 @@ PROJECTS
 }
 
 .projects .project-block.production {
-	background: url("../img/projects_prod01_opacity.png") center;
+	background: url("../img/projects_prod01_opacity_02.png") center;
 }
 
 .projects .project-block.art {
-	background: url("../img/projects_games_opacity.png") center;
+	background: url("../img/projects_prod01_opacity_02.png") center;
 }
 
 .projects .project-block.games {
-	background: url("../img/projects_art_opacity.png") center;
+	background: url("../img/projects_prod01_opacity_02.png") center;
 }
 
 .projects .project-block.art::before {
