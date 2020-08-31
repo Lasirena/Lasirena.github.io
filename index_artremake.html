@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109690924-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109690924-1');
+    </script>
+
+    <!-- jQuery import -->
+    <script
+			  src="https://code.jquery.com/jquery-3.4.0.slim.min.js"
+			  integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <!-- Marmoset Viewer JS library -->>
+    <script src="https://viewer.marmoset.co/main/marmoset.js"></script>
+
+    <title>Alice Hinton-Jones</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Styles Override -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- Font Awesome -->
+    <!-- <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/0e68199bca.js" crossorigin="anonymous"></script>
+
+    <!-- Body Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom JavaScript -->
+    <!-- Portfolio section templates -->
+    <script type="text/javascript">
+      window.onload = function() {
+        // var marmoset_params = {autoStart: false, fullFrame: true};
+        // var viewer_table = new marmoset.WebViewer(1920, 1080, "marmoset/table.mview");
+        // var viewer_element = document.getElementById('tableviewer');
+        // viewer_element.appendChild(viewer_table.domRoot);
+
+
+        document.getElementById("projects").addEventListener('click', function(e){
+          console.log("event recorded with element" + e.target);
+          console.log(e.target.id);
+          
+          if (e.target && e.target.id == "link-projects-games") {
+            console.log("clicked on game element");
+            var container = document.getElementById("projects");
+            container.innerHTML = `
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                    <h1><a id="link-projects-art">Back to art projects</a></h1>
+                  </div>
+                </div>
+              </div>
+            `;
+          } 
+          
+          else if (e.target && e.target.id == "link-projects-art") {
+            var container = document.getElementById("projects");
+            container.innerHTML = `
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                    <h1><a id="link-projects-games">Back to game projects</a></h1>
+                  </div>
+                </div>
+              </div>
+            `;
+          }
+
+          else if (e.target && e.target.id == "link-projects-prod") {
+            var container = document.getElementById("projects");
+            container.innerHTML = `
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                    <h1><a id="link-projects-art">My Work</a></h1>
+                  </div>
+                </div>
+              </div>
+            `;
+          }
+        });
+      }
+    </script>
+  </head>
+  <body data-spy="scroll" data-target="#main-navbar" data-offset="70">
+
+  
+    <!-- NAVBAR -->
+
+    <div id="main-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <a class="navbar-brand" href="http://alicehintonjones.com"><img alt="Alice Hinton-Jones" src="img/logodark.png"></a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#projects">My work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR-END -->
+
+
+    <!-- HEADER -->
+
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+              <h1>Alice Hinton-Jones</h1>
+              <p>Hey, I'm Alice! Formerly an Evangelist for Unity, I'm currently seeking junior artist opportunities.</p>
+  
+              <ul class="list-inline">
+                <li><a href="#contact" class="btn btn-lightblue btn-md">Get in touch</a></li>
+                <li><a href="#projects" class="btn btn-transparent btn-md">My Work</a></li>
+              </ul>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER-END -->
+
+
+    <!-- ABOUT ME -->
+
+    <div class="about-me" id="about-me">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-lg-12 col-md-12">
+    				<h1>ABOUT ME</h1>
+    			</div>
+    		</div>
+
+    		<div class="row">
+
+	          <div class="col-lg-8 col-md-8">
+              <p><blockquote><em>Developer, Artist, and a big fan of engaging game narratives.</em></blockquote></p>
+              
+                <p>With a year of games industry experience under my belt as a Technical Evangelist for Unity, I am looking for opportunities to grow and develop as a games artist.</p>
+
+                <p>I am currently in my graduate year of a Computer Science and Games Development course at City, University of London.</p>
+
+                <p>I have both a strong background in programming (C#, C++) as well as an unending passion for art which I have focused on developing in my personal time throughout the years.</p>
+
+                <p>Additionally, my time as an Evangelist provided me with a lot of valuable skills when it comes to content production, product presentation, and technical marketing.</p>
+                
+                <p>Check out my portfolio section below for an overview of what I can do for you!</p>
+	          </div>
+
+            <div class="col-lg-4 col-md-4 about-me-image">
+              <img class="img-circle" src="img/alice1sm.jpg">
+            </div>
+
+	        </div>
+
+          <div class="row">
+
+            <div class="col-lg-12 col-md-12 about-centered">
+              <hr>
+              <h2>Find me on social media:</h2>
+              <ul class="list-inline">
+                <li><a href="https://artstation.com/alicehintonjones" class="twitter"><i class="fab fa-artstation fa-3x" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/Lasirena" class="github"><i class="fab fa-github fa-3x" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/aliceon/" class="linkedin"><i class="fab fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/AliceHintonJ" class="twitter"><i class="fab fa-twitter fa-3x" aria-hidden="true"></i></a></li>
+                <!-- insta <li><a href="https://www.instagram.com/alicehintonjones/" class="instagram"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li> -->
+              </ul>
+
+            </div>
+
+          </div>
+      </div>
+    </div>
+
+    <!-- ABOUT ME-END -->
+
+    <!-- PROJECTS ART -->
+
+    <div class="projects" id="projects">
+
+      <div class="container projects-display">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <h1>My Work</h1>
+            </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-12 col-md-12 center-horizontal">
+            <ul class="list-inline">
+              <li><a id="link-projects-art" class="btn btn-lightblue btn-md">Art</a></li>
+              <li><a id="link-projects-prod" class="btn btn-transparent btn-md">Production</a></li>
+              <li><a id="link-projects-games" class="btn btn-transparent btn-md">Games</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+        
+      <div class="grid-2d">
+        <div class="grid-image">
+          <div class="image-title">
+            <span class="title">Mesmer</span>
+            <span class="type">2D Character Illustration</span>
+          </div>
+          <img src="img/art/mesmer.png" alt="">
+        </div>
+        <div class="span-2 grid-image">
+          <div class="image-title">
+            <span class="title">Inferno Knight</span>
+            <span class="type">3D Sculpt</span>
+          </div>
+          <img src="img/art/infernoknight.png" alt="">
+        </div>
+        <div class="grid-image" style="overflow: hidden;">
+          <div class="image-title">
+            <span class="title">Resource Orbs</span>
+            <span class="type">VFX (UI)</span>
+          </div>  
+          <video src="video/vfx.mp4" autoplay loop style="position: absolute; min-width: 100%; min-height: 100%; display: block; left: 50%; right: 50%; transform: translate(-52%); width: 300%"></video>
+        </div>
+        <div class="span-2 grid-image">
+          <div class="image-title">
+            <span class="title">Unity Royale</span>
+            <span class="type">UI Art</span>
+          </div>
+          <img src="img/art/cardart.png" alt="">
+        </div>
+        <div class="span-2 grid-image">
+          <div class="image-title">
+            <span class="title">Table Prop</span>
+            <span class="type">3D Low-Poly</span>
+          </div>
+          <iframe src="marmoset/table.html" frameborder="0"></iframe>
+          <!-- <iframe src="https://www.artstation.com/embed/21896115" frameborder="0" allow="fullscreen; vr"></iframe> -->
+        </div>
+
+        <!-- <div class="grid-image">
+          <div class="image-title">
+            <span class="title">Character Bust</span>
+            <span class="type">3D Sculpt</span>
+          </div>
+          <iframe height="300px" src="https://sketchfab.com/models/482ea256b1a64a568416608f5c21b2e7/embed?preload=1" frameborder="0" allow="fullscreen; vr"></iframe>
+        </div>
+        <div class="grid-image">
+          <div class="image-title">
+            <span class="title">Icicle</span>
+            <span class="type">3D Low-Poly</span>
+          </div>
+          <iframe src="https://sketchfab.com/models/1d8da561d27542a3a5167288fdfbed0a/embed?preload=1" frameborder="0" allow="fullscreen; vr"></iframe>
+        </div>
+        <div class="span-2 grid-image">
+          <div class="image-title">
+            <span class="title">Crit Happens</span>
+            <span class="type">2D Guild Logo</span>
+          </div>
+          <img src="img/art/crithappens.jpg" alt="">
+        </div> -->
+
+      </div>
+
+    </div>
+
+    <!-- PROJECTS-END -->
+
+    <!-- CONTACT -->
+
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <h1>Get in touch</h1>
+            <p>If you want to work with me or have an idea you wish to discuss, feel free to reach out to me via the following:</p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-envelope" aria-hidden="true"></i> E-Mail: <a href="mailto:contact@alicehintonjones.com">contact@alicehintonjones.com</a></li>
+              <li><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn: <a href="https://www.linkedin.com/in/aliceon/">linkedin.com/aliceon</a></li>
+              <li><i class="fab fa-twitter" aria-hidden="true"></i> Twitter: <a href="https://twitter.com/AliceHintonJ">@AliceHintonJ</a></li>
+            </ul>
+            <!-- <p>You can also find me on social media:</p>
+            <ul class="list-inline">
+                <li><a href="https://github.com/Lasirena"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/aliceon/"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/AliceOnys"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/alicehintonjones/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT-END -->
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+    	<div class="container">
+    		<div class="row">
+
+    			<div class="col-lg-6 col-md-6">
+    				<a href="http://alicehintonjones.com"><img src="img/logolight.png"></a>
+    				<p>Copyright &copy; Alice Hinton-Jones 2017-2019</p>
+    			</div>
+
+    			<div class="col-lg-6 col-md-6 footer-right">
+    				<h1>CONTACT ME</h1>
+            		<p>For all website-related queries please e-mail <a href="mailto:contact@alicehintonjones.com">contact@alicehintonjones.com</a>.</p>
+    			</div>
+
+    		</div>
+    	</div>
+    </div>
+
+    <!-- FOOTER-END -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ccw.js"></script>
+  </body>
+</html>
