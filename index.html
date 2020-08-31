@@ -24,6 +24,9 @@
     </script>
     <script type="text/javascript" src="js/custom.js"></script>
 
+    <!-- AOS Animation library - JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- Marmoset Viewer JS library -->>
     <script src="https://viewer.marmoset.co/main/marmoset.js"></script>
 
@@ -31,6 +34,9 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS animation library - CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Styles Override -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -58,127 +64,158 @@
     <!-- Portfolio section templates -->
     <script type="text/javascript">
       window.onload = function() {
+        AOS.init();
         document.getElementById("projects").addEventListener('click', function(e){
-          console.log("event recorded with element" + e.target);
-          console.log(e.target.id);
           
           if (e.target && e.target.id == "link-projects-games") {
             console.log("clicked on game element");
             var container = document.getElementById("projects");
             container.innerHTML = `
             <div class="container projects-display">
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <h1>My Work</h1>
-            </div>
-        </div>
+              <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                      <h1>My Work</h1>
+                  </div>
+              </div>
+              
+              <div class="row bottom-margins">
+                <div class="col-lg-12 col-md-12 center-horizontal">
+                  <ul class="list-inline">
+                    <li><a id="link-projects-art" class="btn btn-transparent btn-md">Art</a></li>
+                    <li><a id="link-projects-prod" class="btn btn-transparent btn-md">Production</a></li>
+                    <li><a id="link-projects-games" class="btn btn-lightblue btn-md">Games</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- PROJECT 1 -->
+
+              <div class="row project-content vertical-align">
+                <div class="col-lg-6 col-md-6">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" width="700" height="400" src="https://www.youtube.com/embed/45H0gP6XB6w?rel=0&modestbranding=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                  <h3>Demonbound - fully procedural dungeon crawler</h3>
+                  <h2>Personal Project (2020)</h2>
+                  <p>In this latest solo Unity project, my goal was to tackle the creation of my own procedural algorithm for environment generation. The result is a Diablo-inspired ARPG prototype. Additional functionality may be added in the future.</p>
+                  <p>Key features include:</p>
+                  <ul>
+                    <li>Fully procedural and customizable 3D dungeon generation algorithm</li>
+                    <li>Room population algorithm based on theme presets (implemented via ScriptableObjects)</li>
+                    <li>New room presets and objects can be added to the population algorithm without writing any additional code</li>
+                    <li>Smart object placement behaviour (e.g. avoidance of similar types, wall or central placement, etc.)</li>
+                    <li>Depth-based dissolve shader (to allow the player to be visible behind walls)</li>
+                    <li>Performant minimap solution for procedural levels</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- PROJECT 2 -->
+
+              <div class="row project-content vertical-align">
+                <div class="col-lg-6 col-md-6">
+                  <img class="img-responsive" src="img/games/05.jpg" alt="Game Screenshot">
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                  <h3>Space Surfer - pure C++ and OpenGL game</h3>
+                  <h2>Personal Project (2020)</h2>
+                  <p>Built from the ground up in C++, this engine-less game focused solely around working with the modern standards of OpenGL.</p>
+                  <p>Key features include:</p>
+                  <ul>
+                    <li>Spline-based procedural path geometry</li>
+                    <li>Custom implementation of the Blinn-Phong reflection model</li>
+                    <li>Custom normal-mapping shader, and a geometry shader to visually debug mesh normals</li>
+                    <li>Implementation of different light types (spot, point, directional)</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <!-- PROJECT 1 -->
+
+              <div class="row project-content vertical-align">
+                <div class="col-lg-6 col-md-6">
+                  <a href="https://lasirena.itch.io/torrheim"><img class="img-responsive" src="img/games/01.png" alt="Game Screenshot"></a>
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+                  <h3>Torrheim - a 2D narrative game</h3>
+                  <h2>Unity Evangelists Office Jam (2019)</h2>
+                  <p>I worked on this Unity project with my colleague at the time when we were preparing some tutorials for Global Game Jam. During the jam, I wanted to focus on producing art assets.</p>
+                  <p>Over two days I produced:</p>
+                  <ul>
+                    <li>All 2D character art and animations</li>
+                    <li>All 2D environment and prop art</li>
+                    <li>All GUI art and narrative</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- PROJECT 2 -->
+
+              <div class="row project-content vertical-align">
+                <div class="col-lg-6 col-md-6">
+                  <a href="https://github.com/Lasirena/Hacksussex-3D-Fighter"><img class="img-responsive" src="img/games/02.jpg" alt="Customizing Snaps Prototype assets with ProBuilder"></a>
+                </div>
         
-        <div class="row bottom-margins">
-          <div class="col-lg-12 col-md-12">
-            <ul class="list-inline">
-              <li><a id="link-projects-art" class="btn btn-transparent btn-md">Art</a></li>
-              <li><a id="link-projects-prod" class="btn btn-transparent btn-md">Production</a></li>
-              <li><a id="link-projects-games" class="btn btn-lightblue btn-md">Games</a></li>
-            </ul>
-          </div>
-        </div>
-        
-        <!-- PROJECT 1 -->
-
-        <div class="row project-content vertical-align">
-          <div class="col-lg-4 col-md-4">
-            <a href="https://lasirena.itch.io/torrheim"><img class="img-responsive" src="img/games/01.png" alt="Customizing Snaps Prototype assets with ProBuilder"></a>
-          </div>
-
-          <div class="col-lg-8 col-md-8">
-            <h3>Torrheim - a 2D narrative game</h3>
-            <h2>Global Game Jam (2019)</h2>
-            <p>I worked on this Unity project with my colleague at the time during Global Game Jam. During the jam, I wanted to focus on producing art assets. I made all the 2D assets and animations, including characters, environments, props, and UI. They can be seen on my Artstation page.</p>
-          </div>
-        </div>
-
-        <!-- PROJECT 2 -->
-
-        <div class="row project-content vertical-align">
-          <div class="col-lg-4 col-md-4">
-            <a href="https://github.com/Lasirena/Hacksussex-3D-Fighter"><img class="img-responsive" src="img/games/02.jpg" alt="Customizing Snaps Prototype assets with ProBuilder"></a>
-          </div>
-  
-          <div class="col-lg-8 col-md-8">
-            <h3>3D Fighter</h3>
-            <h2>Hacksussex (2017)</h2>
-            <p>This was a small fighter-type game I ended up making by myself in Unity over the course of Hacksussex 2017. A very simple 2-player game which let you fight each other with 2 controllers. Assets were sourced from the Asset Store.</p>
-          </div>
-        </div>
-
-        <!-- PROJECT 3 -->
-
-        <div class="row project-content vertical-align">
-            <div class="col-lg-4 col-md-4">
-              <a href="https://github.com/Lasirena/Invoker-GGJ17"><img class="img-responsive" src="img/games/03.png" alt="Customizing Snaps Prototype assets with ProBuilder"></a>
+                <div class="col-lg-6 col-md-6">
+                  <h3>3D Fighter</h3>
+                  <h2>Hacksussex (2017)</h2>
+                  <p>An earlier project, this was a small fighter-type game I ended up making in Unity over two days during Hacksussex 2017.</p>
+                  <p>Key features:</p>
+                  <ul>
+                    <li>Local 2-player versus co-op</li>
+                    <li>Multiple types of attack moves</li>
+                    <li>Controller support</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-    
-            <div class="col-lg-8 col-md-8">
-              <h3>Invoker - a VR game</h3>
-              <h2>Global Game Jam (2017)</h2>
-              <p>Developed in Unity with a team of four, this was my very first game jam project. We put together a Virtual Reality game using a LeapMotion controller which scanned the movement and position of each finger, allowing the player to cast spells with specific gestures in order to fight off waves of enemy skeletons.</p>
-            </div>
-          </div>
-
-        <!-- PROJECT 4 -->
-
-        <div class="row project-content vertical-align">
-            <div class="col-lg-4 col-md-4">
-              <a href="https://github.com/Lasirena/StarFall-Kombat"><img class="img-responsive" src="img/games/04.jpg" alt="Customizing Snaps Prototype assets with ProBuilder"></a>
-            </div>
-    
-            <div class="col-lg-8 col-md-8">
-              <h3>StarFall Kombat - Asteroids-inspired shooter</h3>
-              <h2>Personal Project (2016) </h2>
-              <p>One of my very first game development projects, this 2D asteroids-like shooter was developed in Java using Processing. The game is named after the three other titles from which I have used a couple of assets, solely for educational purposes: Starcraft, Fallout, and Mortal Kombat.</p>
-            </div>
-          </div>
-      </div>
             `;
+            AOS.refreshHard;
           } 
           
           else if (e.target && e.target.id == "link-projects-art") {
             var container = document.getElementById("projects");
             container.innerHTML = `
             <div class="container projects-display">
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <h1>My Work</h1>
+              <div class="row" >
+                  <div class="col-lg-12 col-md-12">
+                      <h1>My Work</h1>
+                  </div>
+              </div>
+              
+              <div class="row" >
+                <div class="col-lg-12 col-md-12 center-horizontal">
+                  <ul class="list-inline">
+                    <li><a id="link-projects-art" class="btn btn-lightblue btn-md">Art</a></li>
+                    <li><a id="link-projects-prod" class="btn btn-transparent btn-md">Production</a></li>
+                    <li><a id="link-projects-games" class="btn btn-transparent btn-md">Games</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="row vertical-align" >
+                <div class="col-lg-3 col-md-3">
+                  <!-- 
+                  <a href="https://alicehintonjones.artstation.com" class="twitter"><i class="fab fa-artstation fa-10x" aria-hidden="true"></i></a>
+                  -->
+                  <a href="https://alicehintonjones.artstation.com"><img class="img-responsive" src="img/artstation.png" alt="Artstation"></a>
+                </div>
+
+                <div class="col-lg-9 col-md-9">
+                  <p>Please find my complete artist portfolio on <a href="https://alicehintonjones.artstation.com" class = "in-text-link">Artstation.</a></p>
+                  <p>In the past, I have worked with both 2D and 3D digital art, including Concept Art, Sculpting, Retopology, Modeling and Texturing.</p>
+                  <p>I've also been working on some Realtime VFX lately and as part of my work at Unity.</p>
+                </div>
+              </div>
+
             </div>
-        </div>
-        
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <ul class="list-inline">
-              <li><a id="link-projects-art" class="btn btn-lightblue btn-md">Art</a></li>
-              <li><a id="link-projects-prod" class="btn btn-transparent btn-md">Production</a></li>
-              <li><a id="link-projects-games" class="btn btn-transparent btn-md">Games</a></li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="row vertical-align">
-          <div class="col-lg-3 col-md-3">
-            <!-- 
-            <a href="https://alicehintonjones.artstation.com" class="twitter"><i class="fab fa-artstation fa-10x" aria-hidden="true"></i></a>
-            -->
-            <a href="https://alicehintonjones.artstation.com"><img class="img-responsive" src="img/artstation.png" alt="Artstation"></a>
-          </div>
-
-          <div class="col-lg-9 col-md-9">
-            <p>Please find my complete artist portfolio on <a href="https://alicehintonjones.artstation.com" class = "in-text-link">Artstation.</a></p>
-            <p>In the past, I have worked with both 2D and 3D digital art, including Concept Art, Sculpting, Retopology, Modeling and Texturing.</p>
-            <p>I've also been working on some Realtime VFX lately and as part of my work at Unity.</p>
-          </div>
-        </div>
-
-      </div>
             `;
+            AOS.refreshHard;
           }
 
           else if (e.target && e.target.id == "link-projects-prod") {
@@ -191,7 +228,7 @@
         </div>
         
         <div class="row">
-          <div class="col-lg-12 col-md-12">
+          <div class="col-lg-12 col-md-12 center-horizontal">
             <ul class="list-inline">
               <li><a id="link-projects-art" class="btn btn-transparent btn-md">Art</a></li>
               <li><a id="link-projects-prod" class="btn btn-lightblue btn-md">Production</a></li>
@@ -202,7 +239,7 @@
 
         <div class="row">
           <div class="col-lg-12 col-md-12">
-              <h4>Blogs</h4>
+              <h4>Technical Blogs</h4>
           </div>
         </div>
         
@@ -275,7 +312,7 @@
 
         <div class="row">
             <div class="col-lg-12 col-md-12">
-                <h4>Videos</h4>
+                <h4>Technical Videos</h4>
             </div>
         </div>
 
@@ -387,6 +424,7 @@
 
       </div>
             `;
+            AOS.refreshHard;
           }
         });
       }
@@ -412,8 +450,8 @@
 
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about-me">About me</a></li>
-            <li><a href="#projects">My work</a></li>
+            <li><a href="#about-me">Experience</a></li>
+            <li><a href="#projects">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -427,16 +465,18 @@
 
     <div class="header">
       <div class="container">
-        <div class="row">
+        <div class="row" data-aos="fade-up" aos-duration="2000">
           <div class="col-lg-12 col-md-12">
-              <h1>Alice Hinton-Jones</h1>
-              <p>Hey, I'm Alice! I'm a developer/artist currently seeking further employment opportunities.</p>
+            <img class="img-circle" src="img/alice4sm.jpg">
+            <h1>Alice Hinton-Jones</h1>
+            
+              <p>Developer, artist, and creator advocate; currently in search of further growth and employment opportunities.</p>
   
               <ul class="list-inline">
-                <li><a href="#contact" class="btn btn-lightblue btn-md">Get in touch</a></li>
-                <li><a href="#projects" class="btn btn-transparent btn-md">My Work</a></li>
+                <li><a href="#projects" class="btn btn-lightblue btn-md">My Work</a></li>
+                <li><a href="#contact" class="btn btn-transparent btn-md">Get in touch</a></li>
               </ul>
-            </div>
+          </div>
 
         </div>
       </div>
@@ -449,15 +489,25 @@
 
     <div class="about-me" id="about-me">
     	<div class="container">
-    		<div class="row">
+    		<div class="row" data-aos="fade-up" aos-duration="2000">
     			<div class="col-lg-12 col-md-12">
-    				<h1>ABOUT ME</h1>
+    				<h1>EXPERIENCE</h1>
     			</div>
     		</div>
 
-    		<div class="row">
+        <div class="row" data-aos="fade-up" aos-duration="2000">
+          <div class="col-lg-6 col-md-6" style="text-align: right;">
+            <h2>Work</h2>
+          </div>
+          <div class="col-lg-6 col-md-6" style="text-align: left;">
+            <h2>Education</h2>
+          </div>
+        </div>
 
-	          <div class="col-lg-8 col-md-8">
+    		<div class="row" data-aos="fade-up" aos-duration="2000">
+
+	          <!-- <div class="col-lg-8 col-md-8">
+              <h2>Personal Profile</h2>
               <p><blockquote><em>Developer, Artist, and a big fan of engaging game narratives.</em></blockquote></p>
               
                 <p>With a year of games industry experience under my belt as a Technical Evangelist for Unity, I am looking for further opportunities to grow and develop my skillset.</p>
@@ -469,19 +519,66 @@
                 <p>Additionally, my time as an Evangelist provided me with a lot of valuable skills when it comes to content production, product presentation, and technical marketing.</p>
                 
                 <p>Check out my portfolio section below for an overview of what I can do for you!</p>
-	          </div>
+            </div> -->
+            <div class="col-lg-6 col-md-6" style="text-align: right;">
+                <div class="role-title"><span>2018 - 2019</span><span>Developer Advocate</span></div>
+                <h4>Unity Technologies</h4>
+                <p>As a Developer Advocate, I was responsible for representing Unity in front of the developer community at large, always engaging with creators online and at events and conventions.</p> 
+                <p>I was also responsible for producing and delivering in-depth technical content about working with the new features of the engine in order to showcase their value to our community.</p>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="role-title"><span>BSc Computer Science w/ Games Technology</span><span>2016 - 2020</span></div>
+              <h4>City, University of London</h4>
+              <p>Achieved a 1st Class (1:1) degree in a technical course on software engineering and game development. I was taught about important software engineering concepts such as data structures, algorithms and algorithmic complexity, and engineering patterns. </p>
+              <!-- ; as well as the specifics of how they apply to game development -->
+              <p>Additionally, I learned about graphics and shader programming, as well as working with backend databases, including their use within the scope of web development.</p>
+            </div>
+          </div>
+          
+          <div class="row" data-aos="fade-up" aos-duration="2000">
+            <div class="col-lg-12 col-md-12" style="text-align: center;">
+              <hr>
+              <h2>Skills</h2>
+            </div>
+          </div>
 
-            <div class="col-lg-4 col-md-4 about-me-image">
-              <img class="img-circle" src="img/alice4sm.jpg">
+          <div class="row" style="text-align: center;" data-aos="fade-up" aos-duration="2000">
+            <div class="col-lg-4 col-md-4">
+              <h4>Development</h4>
+              <!-- <div class="skill-title">Development</div> -->
+              <ul class="list-inline">
+                <li><img class="img-responsive" src="img/icons/cpp.png" alt="C++"></li>
+                <li><img class="img-responsive" src="img/icons/csharp.png" alt="C#"></li>
+                <li><img class="img-responsive" src="img/icons/unity.png" alt="Unity"></li>
+                <li><img class="img-responsive" src="img/icons/opengl.png" alt="OpenGL"></li>
+              </ul>
             </div>
 
-	        </div>
+            <div class="col-lg-4 col-md-4">
+              <h4>3D & Texturing</h4>
+              <!-- <div class="skill-title">3D & Texturing</div> -->
+              <ul class="list-inline">
+                <li><img class="img-responsive" src="img/icons/maya.png" alt="Autodesk Maya"></li>
+                <li><img class="img-responsive" src="img/icons/zbrush.png" alt="ZBrush"></li>
+                <li><img class="img-responsive" src="img/icons/photoshop.png" alt="Adobe Photoshop"></li>
+              </ul>
+            </div>
 
-          <div class="row">
+            <div class="col-lg-4 col-md-4">
+              <h4>Production</h4>
+              <!-- <div class="skill-title">Production tools</div> -->
+              <ul class="list-inline">
+                <li><img class="img-responsive" src="img/icons/premiere.png" alt="Adobe Premiere"></li>
+                <li><img class="img-responsive" src="img/icons/audition.png" alt="Adobe Audition"></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row" data-aos="fade-up" aos-duration="2000">
 
             <div class="col-lg-12 col-md-12 about-centered">
               <hr>
-              <h2>Find me on social media:</h2>
+              <h2>Find me on these platforms:</h2>
               <ul class="list-inline">
                 <li><a href="https://artstation.com/alicehintonjones" class="twitter"><i class="fab fa-artstation fa-3x" aria-hidden="true"></i></a></li>
                 <li><a href="https://github.com/Lasirena" class="github"><i class="fab fa-github fa-3x" aria-hidden="true"></i></a></li>
@@ -502,13 +599,13 @@
 
     <div class="projects" id="projects">
       <div class="container">
-        <div class="row">
+        <div class="row" data-aos="fade-up" aos-duration="2000">
           <div class="col-lg-12 col-md-12">
-            <h1>My Work</h1>
+            <h1>Portfolio</h1>
           </div>
         </div>
         
-        <div class="row project-row">
+        <div class="row project-row" data-aos="fade-up" aos-duration="2000">
 
           <div class="col-lg-4 col-md-4">
             <div class="project-block art" id="link-projects-art">
@@ -541,7 +638,7 @@
         <div class="row">
           <div class="col-lg-12 col-md-12">
             <h1>Get in touch</h1>
-            <p>If you want to work with me or have an idea you wish to discuss, feel free to reach out to me via the following:</p>
+            <p>If you think my skills suit your requirements, wish to work with me, or have an idea you'd like to discuss, then feel free to reach out to me via the following:</p>
             <ul class="list-unstyled">
               <li><i class="fas fa-envelope" aria-hidden="true"></i> E-Mail: <a href="mailto:contact@alicehintonjones.com">contact@alicehintonjones.com</a></li>
               <li><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn: <a href="https://www.linkedin.com/in/aliceon/">linkedin.com/aliceon</a></li>
@@ -569,7 +666,7 @@
 
     			<div class="col-lg-6 col-md-6">
     				<a href="http://alicehintonjones.com"><img src="img/logolight.png"></a>
-    				<p>Copyright &copy; Alice Hinton-Jones 2017-2019</p>
+    				<p>Copyright &copy; Alice Hinton-Jones 2017-2020</p>
     			</div>
 
     			<div class="col-lg-6 col-md-6 footer-right">

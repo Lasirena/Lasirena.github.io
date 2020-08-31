@@ -136,80 +136,7 @@
     <!-- NAVBAR-END -->
 
 
-    <!-- HEADER -->
-
-    <div class="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-              <h1>Alice Hinton-Jones</h1>
-              <p>Hey, I'm Alice! Formerly an Evangelist for Unity, I'm currently seeking junior artist opportunities.</p>
-  
-              <ul class="list-inline">
-                <li><a href="#contact" class="btn btn-lightblue btn-md">Get in touch</a></li>
-                <li><a href="#projects" class="btn btn-transparent btn-md">My Work</a></li>
-              </ul>
-            </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- HEADER-END -->
-
-
-    <!-- ABOUT ME -->
-
-    <div class="about-me" id="about-me">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-lg-12 col-md-12">
-    				<h1>ABOUT ME</h1>
-    			</div>
-    		</div>
-
-    		<div class="row">
-
-	          <div class="col-lg-8 col-md-8">
-              <p><blockquote><em>Developer, Artist, and a big fan of engaging game narratives.</em></blockquote></p>
-              
-                <p>With a year of games industry experience under my belt as a Technical Evangelist for Unity, I am looking for opportunities to grow and develop as a games artist.</p>
-
-                <p>I am currently in my graduate year of a Computer Science and Games Development course at City, University of London.</p>
-
-                <p>I have both a strong background in programming (C#, C++) as well as an unending passion for art which I have focused on developing in my personal time throughout the years.</p>
-
-                <p>Additionally, my time as an Evangelist provided me with a lot of valuable skills when it comes to content production, product presentation, and technical marketing.</p>
-                
-                <p>Check out my portfolio section below for an overview of what I can do for you!</p>
-	          </div>
-
-            <div class="col-lg-4 col-md-4 about-me-image">
-              <img class="img-circle" src="img/alice1sm.jpg">
-            </div>
-
-	        </div>
-
-          <div class="row">
-
-            <div class="col-lg-12 col-md-12 about-centered">
-              <hr>
-              <h2>Find me on social media:</h2>
-              <ul class="list-inline">
-                <li><a href="https://artstation.com/alicehintonjones" class="twitter"><i class="fab fa-artstation fa-3x" aria-hidden="true"></i></a></li>
-                <li><a href="https://github.com/Lasirena" class="github"><i class="fab fa-github fa-3x" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/aliceon/" class="linkedin"><i class="fab fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
-                <li><a href="https://twitter.com/AliceHintonJ" class="twitter"><i class="fab fa-twitter fa-3x" aria-hidden="true"></i></a></li>
-                <!-- insta <li><a href="https://www.instagram.com/alicehintonjones/" class="instagram"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li> -->
-              </ul>
-
-            </div>
-
-          </div>
-      </div>
-    </div>
-
-    <!-- ABOUT ME-END -->
+    
 
     <!-- PROJECTS PROD -->
 
@@ -223,7 +150,7 @@
         </div>
         
         <div class="row bottom-margins">
-          <div class="col-lg-12 col-md-12">
+          <div class="col-lg-12 col-md-12 center-horizontal">
             <ul class="list-inline">
               <li><a id="link-projects-art" class="btn btn-transparent btn-md">Art</a></li>
               <li><a id="link-projects-prod" class="btn btn-transparent btn-md">Production</a></li>
@@ -231,94 +158,129 @@
             </ul>
           </div>
         </div>
-        
+
         <!-- PROJECT 1 -->
 
         <div class="row project-content vertical-align">
-          <div class="col-lg-4 col-md-4">
-            <a href="https://lasirena.itch.io/torrheim"><img class="img-responsive" src="img/games/01.png" alt="Customizing Snaps Prototype assets with ProBuilder"></a>
+          <div class="col-lg-6 col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" width="700" height="400" src="https://www.youtube.com/embed/45H0gP6XB6w?rel=0&modestbranding=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
           </div>
 
-          <div class="col-lg-8 col-md-8">
-            <h3>Torrheim - a 2D narrative game</h3>
-            <h2>Global Game Jam (2019)</h2>
-            <p>I worked on this Unity project with my colleague at the time during Global Game Jam. During the jam, I wanted to focus on producing art assets. I made all the 2D assets and animations, including characters, environments, props, and UI. They can be seen on my Artstation page.</p>
+          <div class="col-lg-6 col-md-6">
+            <h3>Demonbound - fully procedural dungeon crawler</h3>
+            <h2>Personal Project (2020)</h2>
+            <p>In this latest solo Unity project, my goal was to tackle the creation of my own procedural algorithm for environment generation. The result is a Diablo-inspired ARPG prototype. Additional functionality may be added in the future.</p>
+            <p>Key features include:</p>
+            <ul>
+              <li>Fully procedural and customizable 3D dungeon generation algorithm</li>
+              <li>Room population algorithm based on theme presets (implemented via ScriptableObjects)</li>
+              <li>New room presets and objects can be added to the population algorithm without writing any additional code</li>
+              <li>Smart object placement behaviour (e.g. avoidance of similar types, wall or central placement, etc.)</li>
+              <li>Depth-based dissolve shader (to allow the player to be visible behind walls)</li>
+              <li>Performant minimap solution for procedural levels</li>
+            </ul>
           </div>
         </div>
 
         <!-- PROJECT 2 -->
 
         <div class="row project-content vertical-align">
-          <div class="col-lg-4 col-md-4">
+          <div class="col-lg-6 col-md-6">
+            <img class="img-responsive" src="img/games/05.jpg" alt="Game Screenshot">
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <h3>Space Surfer - pure C++ and OpenGL game</h3>
+            <h2>Personal Project (2020)</h2>
+            <p>Built from the ground up in C++, this engine-less game focused solely around working with the modern standards of OpenGL.</p>
+            <p>Key features include:</p>
+            <ul>
+              <li>Spline-based procedural path geometry</li>
+              <li>Custom implementation of the Blinn-Phong reflection model</li>
+              <li>Custom normal-mapping shader, and a geometry shader to visually debug mesh normals</li>
+              <li>Implementation of different light types (spot, point, directional)</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- PROJECT 1 -->
+
+        <div class="row project-content vertical-align">
+          <div class="col-lg-6 col-md-6">
+            <a href="https://lasirena.itch.io/torrheim"><img class="img-responsive" src="img/games/01.png" alt="Game Screenshot"></a>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <h3>Torrheim - a 2D narrative game</h3>
+            <h2>Unity Evangelists Office Jam (2019)</h2>
+            <p>I worked on this Unity project with my colleague at the time when we were preparing some tutorials for Global Game Jam. During the jam, I wanted to focus on producing art assets.</p>
+            <p>Over two days I produced:</p>
+            <ul>
+              <li>All 2D character art and animations</li>
+              <li>All 2D environment and prop art</li>
+              <li>All GUI art and narrative</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+
+        <div class="row project-content vertical-align">
+          <div class="col-lg-6 col-md-6">
             <a href="https://github.com/Lasirena/Hacksussex-3D-Fighter"><img class="img-responsive" src="img/games/02.jpg" alt="Customizing Snaps Prototype assets with ProBuilder"></a>
           </div>
   
-          <div class="col-lg-8 col-md-8">
+          <div class="col-lg-6 col-md-6">
             <h3>3D Fighter</h3>
             <h2>Hacksussex (2017)</h2>
-            <p>This was a small fighter-type game I ended up making by myself in Unity over the course of Hacksussex 2017. A very simple 2-player game which let you fight each other with 2 controllers. Assets were sourced from the Asset Store.</p>
+            <p>An earlier project, this was a small fighter-type game I ended up making in Unity over two days during Hacksussex 2017.</p>
+            <p>Key features:</p>
+            <ul>
+              <li>Local 2-player versus co-op</li>
+              <li>Multiple types of attack moves</li>
+              <li>Controller support</li>
+            </ul>
           </div>
         </div>
 
         <!-- PROJECT 3 -->
 
-        <div class="row project-content vertical-align">
-            <div class="col-lg-4 col-md-4">
+        <!-- <div class="row project-content vertical-align">
+            <div class="col-lg-6 col-md-6">
               <a href="https://github.com/Lasirena/Invoker-GGJ17"><img class="img-responsive" src="img/games/03.png" alt="Customizing Snaps Prototype assets with ProBuilder"></a>
             </div>
     
-            <div class="col-lg-8 col-md-8">
+            <div class="col-lg-6 col-md-6">
               <h3>Invoker - a VR game</h3>
               <h2>Global Game Jam (2017)</h2>
               <p>Developed in Unity with a team of four, this was my very first game jam project. We put together a Virtual Reality game using a LeapMotion controller which scanned the movement and position of each finger, allowing the player to cast spells with specific gestures in order to fight off waves of enemy skeletons.</p>
+              <ul>
+                <li>Gesture-based attacks for the player</li>
+                <li>Wave-based combat</li>
+              </ul>
             </div>
-          </div>
+        </div>
 
-        <!-- PROJECT 4 -->
+        
 
         <div class="row project-content vertical-align">
-            <div class="col-lg-4 col-md-4">
+            <div class="col-lg-6 col-md-6">
               <a href="https://github.com/Lasirena/StarFall-Kombat"><img class="img-responsive" src="img/games/04.jpg" alt="Customizing Snaps Prototype assets with ProBuilder"></a>
             </div>
     
-            <div class="col-lg-8 col-md-8">
+            <div class="col-lg-6 col-md-6">
               <h3>StarFall Kombat - Asteroids-inspired shooter</h3>
               <h2>Personal Project (2016) </h2>
               <p>One of my very first game development projects, this 2D asteroids-like shooter was developed in Java using Processing. The game is named after the three other titles from which I have used a couple of assets, solely for educational purposes: Starcraft, Fallout, and Mortal Kombat.</p>
             </div>
-          </div>
+        </div> -->
       </div>
 
     </div>
 
     <!-- PROJECTS-END -->
-
-    <!-- CONTACT -->
-
-    <div class="contact" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <h1>Get in touch</h1>
-            <p>If you want to work with me or have an idea you wish to discuss, feel free to reach out to me via the following:</p>
-            <ul class="list-unstyled">
-              <li><i class="fas fa-envelope" aria-hidden="true"></i> E-Mail: <a href="mailto:contact@alicehintonjones.com">contact@alicehintonjones.com</a></li>
-              <li><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn: <a href="https://www.linkedin.com/in/aliceon/">linkedin.com/aliceon</a></li>
-              <li><i class="fab fa-twitter" aria-hidden="true"></i> Twitter: <a href="https://twitter.com/AliceHintonJ">@AliceHintonJ</a></li>
-            </ul>
-            <!-- <p>You can also find me on social media:</p>
-            <ul class="list-inline">
-                <li><a href="https://github.com/Lasirena"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/aliceon/"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
-                <li><a href="https://twitter.com/AliceOnys"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.instagram.com/alicehintonjones/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
-            </ul> -->
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CONTACT-END -->
 
     <!-- FOOTER -->
 
