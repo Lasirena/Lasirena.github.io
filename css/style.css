@@ -409,7 +409,7 @@ PROJECTS
 .projects {
 	/*background-color: #242424;*/
 	z-index: -2;
-	background: url(../img/bg_projects_alt.jpg) no-repeat center center;
+	background: url(../img/backgrounds/bg3_gry_01.jpg) no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
 	width: 100%;
