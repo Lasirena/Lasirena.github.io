@@ -1,712 +1,316 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-  	<meta charset="utf-8">
+    <title>Alice Hinton-Jones - Portfolio</title>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109690924-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-109690924-1');
-    </script>
-
-    <!-- jQuery import -->
-    <script
-			  src="https://code.jquery.com/jquery-3.4.0.slim.min.js"
-			  integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI="
-        crossorigin="anonymous">
-    </script>
-    <script type="text/javascript" src="js/custom.js"></script>
-
-    <!-- AOS Animation library - JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- Marmoset Viewer JS library -->>
-    <script src="https://viewer.marmoset.co/main/marmoset.js"></script>
-
-    <title>Alice Hinton-Jones</title>
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- AOS animation library - CSS -->
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://use.typekit.net/kul2uuy.css">
+    <!-- LIBRARIES - CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Styles Override -->
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-
-    <!-- Font Awesome -->
-    <!-- <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"> -->
-    <script src="https://kit.fontawesome.com/0e68199bca.js" crossorigin="anonymous"></script>
-
-    <!-- Body Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon"> 
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Custom JavaScript -->
-    <!-- Portfolio section templates -->
-    <script type="text/javascript">
-      window.onload = function() {
-        AOS.init();
-        document.getElementById("projects").addEventListener('click', function(e){
-          
-          if (e.target && e.target.id == "link-projects-games") {
-            console.log("clicked on game element");
-            var container = document.getElementById("projects");
-            container.innerHTML = `
-            <div class="container projects-display">
-              <div class="row">
-                  <div class="col-lg-12 col-md-12">
-                      <h1>My Work</h1>
-                  </div>
-              </div>
-              
-              <div class="row bottom-margins">
-                <div class="col-lg-12 col-md-12 center-horizontal">
-                  <ul class="list-inline">
-                    <li><a id="link-projects-art" class="btn btn-transparent btn-md">Art</a></li>
-                    <li><a id="link-projects-prod" class="btn btn-transparent btn-md">Production</a></li>
-                    <li><a id="link-projects-games" class="btn btn-lightblue btn-md">Games</a></li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- PROJECT 1 -->
-
-              <div class="row project-content vertical-align">
-                <div class="col-lg-6 col-md-6">
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" width="700" height="400" src="https://www.youtube.com/embed/45H0gP6XB6w?rel=0&modestbranding=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6">
-                  <h3>Demonbound - fully procedural dungeon crawler</h3>
-                  <h2>Personal Project (2020)</h2>
-                  <p>In this latest solo Unity project, my goal was to tackle the creation of my own procedural algorithm for environment generation. The result is a Diablo-inspired ARPG prototype. Additional functionality may be added in the future.</p>
-                  <p>Key features include:</p>
-                  <ul>
-                    <li>Fully procedural and customizable 3D dungeon generation algorithm</li>
-                    <li>Room population algorithm based on theme presets (implemented via ScriptableObjects)</li>
-                    <li>New room presets and objects can be added to the population algorithm without writing any additional code</li>
-                    <li>Smart object placement behaviour (e.g. avoidance of similar types, wall or central placement, etc.)</li>
-                    <li>Depth-based dissolve shader (to allow the player to be visible behind walls)</li>
-                    <li>Performant minimap solution for procedural levels</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- PROJECT 2 -->
-
-              <div class="row project-content vertical-align">
-                <div class="col-lg-6 col-md-6">
-                  <img class="img-responsive" src="img/games/05.jpg" alt="Game Screenshot">
-                </div>
-
-                <div class="col-lg-6 col-md-6">
-                  <h3>Space Surfer - pure C++ and OpenGL game</h3>
-                  <h2>Personal Project (2020)</h2>
-                  <p>Built from the ground up in C++, this engine-less game focused solely around working with the modern standards of OpenGL.</p>
-                  <p>Key features include:</p>
-                  <ul>
-                    <li>Spline-based procedural path geometry</li>
-                    <li>Custom implementation of the Blinn-Phong reflection model</li>
-                    <li>Custom normal-mapping shader, and a geometry shader to visually debug mesh normals</li>
-                    <li>Implementation of different light types (spot, point, directional)</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <!-- PROJECT 1 -->
-
-              <div class="row project-content vertical-align">
-                <div class="col-lg-6 col-md-6">
-                  <a href="https://lasirena.itch.io/torrheim"><img class="img-responsive" src="img/games/01.png" alt="Game Screenshot"></a>
-                </div>
-
-                <div class="col-lg-6 col-md-6">
-                  <h3>Torrheim - a 2D narrative game</h3>
-                  <h2>Unity Evangelists Office Jam (2019)</h2>
-                  <p>I worked on this Unity project with my colleague at the time when we were preparing some tutorials for Global Game Jam. During the jam, I wanted to focus on producing art assets.</p>
-                  <p>Over two days I produced:</p>
-                  <ul>
-                    <li>All 2D character art and animations</li>
-                    <li>All 2D environment and prop art</li>
-                    <li>All GUI art and narrative</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- PROJECT 2 -->
-
-              <div class="row project-content vertical-align">
-                <div class="col-lg-6 col-md-6">
-                  <a href="https://github.com/Lasirena/Hacksussex-3D-Fighter"><img class="img-responsive" src="img/games/02.jpg" alt="Customizing Snaps Prototype assets with ProBuilder"></a>
-                </div>
-        
-                <div class="col-lg-6 col-md-6">
-                  <h3>3D Fighter</h3>
-                  <h2>Hacksussex (2017)</h2>
-                  <p>An earlier project, this was a small fighter-type game I ended up making in Unity over two days during Hacksussex 2017.</p>
-                  <p>Key features:</p>
-                  <ul>
-                    <li>Local 2-player versus co-op</li>
-                    <li>Multiple types of attack moves</li>
-                    <li>Controller support</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            `;
-            AOS.refreshHard;
-          } 
-          
-          else if (e.target && e.target.id == "link-projects-art") {
-            var container = document.getElementById("projects");
-            container.innerHTML = `
-            <div class="container projects-display">
-              <div class="row" >
-                  <div class="col-lg-12 col-md-12">
-                      <h1>My Work</h1>
-                  </div>
-              </div>
-              
-              <div class="row" >
-                <div class="col-lg-12 col-md-12 center-horizontal">
-                  <ul class="list-inline">
-                    <li><a id="link-projects-art" class="btn btn-lightblue btn-md">Art</a></li>
-                    <li><a id="link-projects-prod" class="btn btn-transparent btn-md">Production</a></li>
-                    <li><a id="link-projects-games" class="btn btn-transparent btn-md">Games</a></li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div class="row vertical-align" >
-                <div class="col-lg-3 col-md-3">
-                  <!-- 
-                  <a href="https://alicehintonjones.artstation.com" class="twitter"><i class="fab fa-artstation fa-10x" aria-hidden="true"></i></a>
-                  -->
-                  <a href="https://alicehintonjones.artstation.com"><img class="img-responsive" src="img/artstation.png" alt="Artstation"></a>
-                </div>
-
-                <div class="col-lg-9 col-md-9">
-                  <p>Please find my complete artist portfolio on <a href="https://alicehintonjones.artstation.com" class = "in-text-link">Artstation.</a></p>
-                  <p>In the past, I have worked with both 2D and 3D digital art, including Concept Art, Sculpting, Retopology, Modeling and Texturing.</p>
-                  <p>I've also been working on some Realtime VFX lately and as part of my work at Unity.</p>
-                </div>
-              </div>
-
-            </div>
-            `;
-            AOS.refreshHard;
-          }
-
-          else if (e.target && e.target.id == "link-projects-prod") {
-            var container = document.getElementById("projects");
-            container.innerHTML = `<div class="container projects-display">
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <h1>My Work</h1>
-            </div>
-        </div>
-        
-        <div class="row">
-          <div class="col-lg-12 col-md-12 center-horizontal">
-            <ul class="list-inline">
-              <li><a id="link-projects-art" class="btn btn-transparent btn-md">Art</a></li>
-              <li><a id="link-projects-prod" class="btn btn-lightblue btn-md">Production</a></li>
-              <li><a id="link-projects-games" class="btn btn-transparent btn-md">Games</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-              <h4>Blogs</h4>
-          </div>
-        </div>
-        
-        <div class="row project-content vertical-align">
-          <div class="col-lg-4 col-md-4">
-            <a href="https://80.lv/articles/from-aaa-gaming-to-journalism-assisted-creation-is-helping-create-3d/"><img class="img-responsive" src="img/blogs/06.jpg" alt="Customizing Snaps Prototype assets with ProBuilder"></a>
-          </div>
-
-          <div class="col-lg-8 col-md-8">
-            <h3>From AAA Gaming to Journalism, Assisted Creation is Helping Create 3D</h3>
-            <h2>80LV</h2>
-            <p>For this article, we interviewed 3D artist Gui Rambelli about his journey through the games industry and his work for The New York Times. Gui spoke about his photogrammetry and asset creation workflows, and how he's leveraging procedural and AI tools to take his work to the next level.</p>
-            <p>Published: May 11, 2021</p>
-          </div>
-        </div>
-        
-        <div class="row project-content vertical-align">
-          <div class="col-lg-4 col-md-4">
-            <a href="https://blogs.unity3d.com/2019/10/07/customizing-snaps-prototype-assets-with-probuilder-2/"><img class="img-responsive" src="img/blogs/02.png" alt="Customizing Snaps Prototype assets with ProBuilder"></a>
-          </div>
-
-          <div class="col-lg-8 col-md-8">
-            <h3>Customizing SNAPS Prototype assets with ProBuilder</h3>
-            <h2>Unity Technologies</h2>
-            <p>In this blog post, we walk users through the asset creation and prototyping workflow using Unity's ProBuilder package. I worked on the blog content and provided the demo scene for the project.</p>
-            <p>Published: October 7, 2019</p>
-          </div>
-        </div>
-
-        <div class="row project-content vertical-align">
-            <div class="col-lg-4 col-md-4">
-              <a href="https://blogs.unity3d.com/2019/03/18/isometric-2d-environments-with-tilemap/"><img class="img-responsive" src="img/blogs/01.png" alt="Isometric 2D Environments with Tilemap"></a>
-            </div>
-  
-            <div class="col-lg-8 col-md-8">
-              <h3>Isometric 2D Environments with Tilemap</h3>
-              <h2>Unity Technologies</h2>
-              <p>This extensive blog post is an introduction to a new Unity 2018.3 2D feature - isometric tilemaps. The blog covers some technicalities of how isometric tilemaps work and an overview of setting them up.</p>
-              <p>Published: March 18, 2019</p>
-            </div>
-        </div>
-
-        <div class="row project-content vertical-align">
-            <div class="col-lg-4 col-md-4">
-              <a href="https://blogs.unity3d.com/2018/12/04/getting-started-with-2d-inverse-kinematics/"><img class="img-responsive" src="img/blogs/03.png" alt="Isometric 2D Environments with Tilemap"></a>
-            </div>
-  
-            <div class="col-lg-8 col-md-8">
-              <h3>Getting Started with 2D Inverse Kinematics</h3>
-              <h2>Unity Technologies</h2>
-              <p>A follow-up to the introduction to 2D Animation, this blog went into some more detail regarding inverse kinematics and creating kinematic chains with Unity's new 2D Animation tools.</p>
-              <p>Published: December 4, 2018</p>
-            </div>
-        </div>
-
-        <div class="row project-content vertical-align">
-            <div class="col-lg-4 col-md-4">
-              <a href="https://blogs.unity3d.com/2018/11/09/getting-started-with-unitys-2d-animation-package/"><img class="img-responsive" src="img/blogs/04.jpg" alt="Isometric 2D Environments with Tilemap"></a>
-            </div>
-  
-            <div class="col-lg-8 col-md-8">
-              <h3>Getting Started with Unity’s 2D Animation Package</h3>
-              <h2>Unity Technologies</h2>
-              <p>The first blog to dive into using Unity's new 2D Animation features.</p>
-              <p>Published: November 9, 2018</p>
-            </div>
-        </div>
-
-        <div class="row project-content vertical-align">
-            <div class="col-lg-4 col-md-4">
-              <a href="https://blogs.unity3d.com/2018/09/20/intro-to-2d-world-building-with-sprite-shape/"><img class="img-responsive" src="img/blogs/05.png" alt="Isometric 2D Environments with Tilemap"></a>
-            </div>
-  
-            <div class="col-lg-8 col-md-8">
-              <h3>Intro to 2D World Building with Sprite Shape</h3>
-              <h2>Unity Technologies</h2>
-              <p>My very first blog for Unity which covered using the new 2D Sprite Shape feature for creating organic-looking environments and shapes.</p>
-              <p>Published: September 20, 2018</p>
-            </div>
-        </div>
-        
-        <!-- VIDEOS -->
-
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <h4>Videos</h4>
-            </div>
-        </div>
-
-        <div class="row project-content vertical-align">
-            <div class="col-lg-4 col-md-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ahpn5e7SGWI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-  
-            <div class="col-lg-8 col-md-8">
-              <h3>Making a 2D Game in Unity in 2 Days</h3>
-              <h2>Unity Technologies</h2>
-              <p>In this video, me and my colleague Ciro Continisio talk users through our game jam experience and give them various tips on game jam workflows and tools. Me and Ciro both worked on the video editing and the demo project together.</p>
-            </div>
-        </div>
-
-        <div class="row project-content vertical-align">
-            <div class="col-lg-4 col-md-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eXGzl8IRP_o" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-  
-            <div class="col-lg-8 col-md-8">
-              <h3>Build levels easily with Snaps in Unity</h3>
-              <h2>Unity Technologies</h2>
-              <p>A follow-up to the SNAPS prototyping blog post, we published two videos to give a visual demonstration of SNAPS workflows. I wrote the full transcript for this video and supplied the demo project.</p>
-            </div>
-        </div>
-
-        <div class="row project-content vertical-align">
-            <div class="col-lg-4 col-md-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7-vZmbdqrYs" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-  
-            <div class="col-lg-8 col-md-8">
-              <h3>3D Modeling with Snaps in Unity!</h3>
-              <h2>Unity Technologies</h2>
-              <p>I wrote the full transcript for this video and supplied the demo project.</p>
-            </div>
-        </div>
-
-        <div class="row project-content vertical-align">
-            <div class="col-lg-4 col-md-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2DsKCJsEzSA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-  
-            <div class="col-lg-8 col-md-8">
-              <h3>How to use Isometric Tilemap in Unity 2018.3</h3>
-              <h2>Unity Technologies</h2>
-              <p>For this project I've worked on the raw footage, the transcript, and the voice-over.</p>
-            </div>
-        </div>
-
-        <div class="row project-content vertical-align">
-            <div class="col-lg-4 col-md-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wumwrMori1Y" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-  
-            <div class="col-lg-8 col-md-8">
-              <h3>Getting Started with Sprite Shape in Unity 2018</h3>
-              <h2>Unity Technologies</h2>
-              <p>My very first video series for Unity, consisting of 3 videos introducing the Sprite Shape tools. I covered the demo project setup (assets were produced by Unity's Content Team), the transcript, recording, voice-over, and editing.</p>
-            </div>
-        </div>
-
-        <!-- CONFERENCES -->
-
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <h4>Conference Recordings</h4>
-            </div>
-        </div>
-
-        <div class="row project-content vertical-align">
-            <div class="col-lg-4 col-md-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Xz0ezuk7TOs" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-  
-            <div class="col-lg-8 col-md-8">
-              <h3>GameOn 2018 GameDev Conference - Creating diverse 2D worlds in Unity</h3>
-              <h2>Unity Technologies</h2>
-              <p>One of the first conferences I've attended as a Technical Evangelist, focusing on the new arrivals to the 2D toolkit.</p>
-            </div>
-        </div>
-
-        <div class="row project-content vertical-align">
-            <div class="col-lg-4 col-md-4">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/p3KLFiJOROk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-  
-            <div class="col-lg-8 col-md-8">
-              <h3>GameDev Days 2019 Conference - Isometric Tilemap and 2D Animation</h3>
-              <h2>Unity Technologies</h2>
-              <p>Another conference where I covered both Tilemap and the 2D Animation tools.</p>
-            </div>
-        </div>
-
-      </div>
-            `;
-            AOS.refreshHard;
-          }
-        });
-      }
-    </script>
+    <!-- LIBRARIES - JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
-  <body data-spy="scroll" data-target="#main-navbar" data-offset="70">
+  <body>
+    <header class="header">
+      <div class=" header-container">
+        <a href="" class="site-title">
+          Alice Hinton-Jones
+        </a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item nav-item-emphasized"><a href="#mywork">My Work</a></li>
+            <li class="nav-item"><a href="#aboutme">About Me</a></li>
+            <li class="nav-item"><a href="#skills">CV</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  
-    <!-- NAVBAR -->
-
-    <div id="main-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          
-          <a class="navbar-brand" href="http://alicehintonjones.com"><img alt="Alice Hinton-Jones" src="img/logodark.png"></a>
-        </div>
-
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about-me">Experience</a></li>
-            <li><a href="#projects">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <main>
+      <section class="section-hero">
+        <div class="container hero-container">
+          <img class="hero-avatar" src="/img/avatar/self3.png" alt="Photo of me">
+          <h1 class="hero-heading">Alice Hinton-Jones</h1>
+          <h2 class="hero-subheading">Game Developer</h2>
+          <ul class="hero-icon-list">
+            <li class="hero-icon">
+              <a href="https://www.linkedin.com/in/aliceon/"><svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 0C24.7956 0 25.5587 0.31607 26.1213 0.87868C26.6839 1.44129 27 2.20435 27 3V24C27 24.7956 26.6839 25.5587 26.1213 26.1213C25.5587 26.6839 24.7956 27 24 27H3C2.20435 27 1.44129 26.6839 0.87868 26.1213C0.31607 25.5587 0 24.7956 0 24V3C0 2.20435 0.31607 1.44129 0.87868 0.87868C1.44129 0.31607 2.20435 0 3 0H24ZM23.25 23.25V15.3C23.25 14.0031 22.7348 12.7593 21.8178 11.8422C20.9007 10.9252 19.6569 10.41 18.36 10.41C17.085 10.41 15.6 11.19 14.88 12.36V10.695H10.695V23.25H14.88V15.855C14.88 14.7 15.81 13.755 16.965 13.755C17.522 13.755 18.0561 13.9762 18.4499 14.3701C18.8438 14.7639 19.065 15.298 19.065 15.855V23.25H23.25ZM5.82 8.34C6.48835 8.34 7.12932 8.0745 7.60191 7.60191C8.0745 7.12932 8.34 6.48835 8.34 5.82C8.34 4.425 7.215 3.285 5.82 3.285C5.14768 3.285 4.50289 3.55208 4.02748 4.02748C3.55208 4.50289 3.285 5.14768 3.285 5.82C3.285 7.215 4.425 8.34 5.82 8.34M7.905 23.25V10.695H3.75V23.25H7.905V23.25Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li class="hero-icon">
+              <a href="#contact">
+              <svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27 2.625C27 1.18125 25.785 0 24.3 0H2.7C1.215 0 0 1.18125 0 2.625V18.375C0 19.8188 1.215 21 2.7 21H24.3C25.785 21 27 19.8188 27 18.375V2.625ZM24.3 2.625L13.5 9.1875L2.7 2.625H24.3ZM24.3 18.375H2.7V5.25L13.5 11.8125L24.3 5.25V18.375Z" fill="white"/>
+              </svg>
+              </a>
+            </li>
           </ul>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- NAVBAR-END -->
-
-
-    <!-- HEADER -->
-
-    <div class="header">
-      <div class="container">
-        <div class="row" data-aos="fade-up" aos-duration="2000">
-          <div class="col-lg-12 col-md-12">
-            <img class="img-circle" src="img/alice4sm.jpg">
-            <h1>Alice Hinton-Jones</h1>
-            
-              <p>Artist. Developer. Writer. | Capture Artist @ Larian Studios</p>
-  
-              <ul class="list-inline">
-                <li><a href="#projects" class="btn btn-lightblue btn-md">My Work</a></li>
-                <li><a href="#contact" class="btn btn-transparent btn-md">Get in touch</a></li>
-              </ul>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- HEADER-END -->
-
-
-    <!-- ABOUT ME -->
-
-    <div class="about-me" id="about-me">
-    	<div class="container">
-    		<div class="row" data-aos="fade-up" aos-duration="2000">
-    			<div class="col-lg-12 col-md-12">
-    				<h1>EXPERIENCE</h1>
-    			</div>
-    		</div>
-
-        <div class="row" data-aos="fade-up" aos-duration="2000">
-          <div class="col-lg-6 col-md-6" style="text-align: right;">
-            <h2>Work</h2>
-          </div>
-          <div class="col-lg-6 col-md-6" style="text-align: left;">
-            <h2>Education</h2>
-          </div>
-        </div>
-
-    		<div class="row" data-aos="fade-up" aos-duration="2000">
-
-	          <!-- <div class="col-lg-8 col-md-8">
-              <h2>Personal Profile</h2>
-              <p><blockquote><em>Developer, Artist, and a big fan of engaging game narratives.</em></blockquote></p>
-              
-                <p>With a year of games industry experience under my belt as a Technical Evangelist for Unity, I am looking for further opportunities to grow and develop my skillset.</p>
-
-                <p>I am currently in my graduate year of a Computer Science and Games Development course at City, University of London.</p>
-
-                <p>I have both a strong background in programming (C#, C++) as well as an unending passion for art which I have focused on developing in my personal time throughout the years.</p>
-
-                <p>Additionally, my time as an Evangelist provided me with a lot of valuable skills when it comes to content production, product presentation, and technical marketing.</p>
-                
-                <p>Check out my portfolio section below for an overview of what I can do for you!</p>
-            </div> -->
-            <div class="col-lg-6 col-md-6" style="text-align: right;">
-          
-              <div class="role-title"><span>2021 - Present</span><span>Capture Artist</span></div>
-              <h4>Larian Studios</h4>
-              <p>As a Capture Artist at Larian, I work on producing the video marketing content for Baldur's Gate 3, from recording to editing and post-production.</p>
-
-              <div class="role-title"><span>2020 - 2021</span><span>Technical Writer</span></div>
-              <h4>Unity Technologies</h4>
-              <p>My mission as a Technical Writer at Unity was to create clear, concise, and accurate documentation for our users, giving them all the information necessary to achieve their creative goals.</p>
-
-                <div class="role-title"><span>2018 - 2019</span><span>Developer Advocate</span></div>
-                <h4>Unity Technologies</h4>
-                <p>As a Developer Advocate, I was responsible for representing Unity in front of the developer community at large, always engaging with creators online and at events and conventions.</p> 
-                <p>I was also responsible for producing and delivering in-depth technical content about working with the new features of the engine in order to showcase their value to our community.</p>
-                
-            </div>
-            <div class="col-lg-6 col-md-6">
-              <div class="role-title"><span>BSc Computer Science w/ Games Technology</span><span>2016 - 2020</span></div>
-              <h4>City, University of London</h4>
-              <p>Achieved a 1st Class (1:1) degree in a technical course on software engineering and game development. I was taught about important software engineering concepts such as data structures, algorithms and algorithmic complexity, and engineering patterns. </p>
-              <!-- ; as well as the specifics of how they apply to game development -->
-              <p>Additionally, I learned about graphics and shader programming, as well as working with backend databases, including their use within the scope of web development.</p>
-            </div>
-          </div>
-          
-          <div class="row" data-aos="fade-up" aos-duration="2000">
-            <div class="col-lg-12 col-md-12" style="text-align: center;">
-              <hr>
-              <h2>Skills</h2>
-            </div>
-          </div>
-
-          <div class="row" style="text-align: center;" data-aos="fade-up" aos-duration="2000">
-            <div class="col-lg-4 col-md-4">
-              <h4>Development</h4>
-              <!-- <div class="skill-title">Development</div> -->
-              <ul class="list-inline">
-                <li><img class="img-responsive" src="img/icons/unity.png" alt="Unity"></li>
-                <li><img class="img-responsive" src="img/icons/csharp.png" alt="C#"></li>
-                <li><img class="img-responsive" src="img/icons/cpp.png" alt="C++"></li>
-                <li><img class="img-responsive" src="img/icons/opengl.png" alt="OpenGL"></li>
-              </ul>
-            </div>
-
-            <div class="col-lg-4 col-md-4">
-              <h4>3D & Texturing</h4>
-              <!-- <div class="skill-title">3D & Texturing</div> -->
-              <ul class="list-inline">
-                <li><img class="img-responsive" src="img/icons/maya.png" alt="Autodesk Maya"></li>
-                <li><img class="img-responsive" src="img/icons/zbrush.png" alt="ZBrush"></li>
-                <li><img class="img-responsive" src="img/icons/photoshop.png" alt="Adobe Photoshop"></li>
-              </ul>
-            </div>
-
-            <div class="col-lg-4 col-md-4">
-              <h4>Production</h4>
-              <!-- <div class="skill-title">Production tools</div> -->
-              <ul class="list-inline">
-                <li><img class="img-responsive" src="img/icons/premiere.png" alt="Adobe Premiere"></li>
-                <li><img class="img-responsive" src="img/icons/audition.png" alt="Adobe Audition"></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="row" data-aos="fade-up" aos-duration="2000">
-
-            <div class="col-lg-12 col-md-12 about-centered">
-              <hr>
-              <h2>Find me on these platforms:</h2>
-              <ul class="list-inline">
-                <li><a href="https://artstation.com/alicehintonjones" class="twitter"><i class="fab fa-artstation fa-3x" aria-hidden="true"></i></a></li>
-                <li><a href="https://github.com/Lasirena" class="github"><i class="fab fa-github fa-3x" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/aliceon/" class="linkedin"><i class="fab fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
-                <li><a href="https://twitter.com/AliceHintonJ" class="twitter"><i class="fab fa-twitter fa-3x" aria-hidden="true"></i></a></li>
-                <!-- insta <li><a href="https://www.instagram.com/alicehintonjones/" class="instagram"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li> -->
-              </ul>
-
-            </div>
-
-          </div>
-      </div>
-    </div>
-
-    <!-- ABOUT ME-END -->
-
-    <!-- PROJECTS -->
-
-    <div class="projects" id="projects">
-      <div class="container">
-        <div class="row" data-aos="fade-up" aos-duration="2000">
-          <div class="col-lg-12 col-md-12">
-            <h1>Portfolio</h1>
-          </div>
-        </div>
-        
-        <div class="row project-row" data-aos="fade-up" aos-duration="2000">
-
-          <div class="col-lg-4 col-md-4">
-            <div class="project-block art" id="link-projects-art">
-              <h2>Art</h2>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4">
-            <div class="project-block production" id="link-projects-prod">
-              <h2>Production</h2>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4">
-            <div class="project-block games" id="link-projects-games">
-              <h2>Games</h2>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- PROJECTS-END -->
-
-    <!-- CONTACT -->
-
-    <div class="contact" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <h1>Get in touch</h1>
-            <p>If you think my skills suit your requirements, wish to work with me, or have an idea you'd like to discuss, then feel free to reach out to me via the following:</p>
-            <ul class="list-unstyled">
-              <li><i class="fas fa-envelope" aria-hidden="true"></i> E-Mail: <a href="mailto:contact@alicehintonjones.com">contact@alicehintonjones.com</a></li>
-              <li><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn: <a href="https://www.linkedin.com/in/aliceon/">linkedin.com/aliceon</a></li>
-              <li><i class="fab fa-twitter" aria-hidden="true"></i> Twitter: <a href="https://twitter.com/AliceHintonJ">@AliceHintonJ</a></li>
+      <!-- EXPERIENCE SECTION -->
+      <section class="section-experience" id="experience">
+        <div class="wide-container">
+          <div class="container">
+            <h1 class="experience-section-heading">Experience</h1>
+            <ul class="experience-list">
+              <li class="experience-item" data-aos="fade-up">
+                  <img src="/img/logos/larian-studios.png" alt="Larian Studios Logo" class="experience-logo">
+                  <div class="experience-mid-content">
+                    <h3 class="experience-workplace">Larian Studios</h3>
+                    <h4 class="experience-date">Sep 2021 - Present</h4>
+                  </div>
+                <div class="experience-right-content">
+                  <h3 class="experience-title">Capture Artist</h3>
+                  <p class="experience-description">As a Capture Artist at Larian, I work on producing the video marketing content for Baldur's Gate 3, from recording to editing and post-production.</p>
+                </div>
+              </li>
+              <li class="experience-item" data-aos="fade-up">
+                  <img src="/img/logos/unity.png" alt="Unity Technologies Logo" class="experience-logo">
+                  <div class="experience-mid-content">
+                    <h3 class="experience-workplace">Unity Technologies</h3>
+                    <h4 class="experience-date">Sep 2020 - Sep 2021</h4>
+                  </div>
+                <div class="experience-right-content">
+                  <h3 class="experience-title">Technical Writer</h3>
+                  <p class="experience-description">My mission as a Technical Writer at Unity was to create clear, concise, and accurate documentation for our users, giving them all the information necessary to achieve their creative goals.</p>
+                </div>
+              </li>
+              <li class="experience-item" data-aos="fade-up">
+                  <img src="/img/logos/unity.png" alt="Unity Technologies Logo" class="experience-logo">
+                  <div class="experience-mid-content">
+                    <h3 class="experience-workplace">Unity Technologies</h3>
+                    <h4 class="experience-date">Jul 2018 - Jul 2019</h4>
+                  </div>
+                <div class="experience-right-content">
+                  <h3 class="experience-title">Developer Advocate</h3>
+                  <p class="experience-description">As a Developer Advocate, I was responsible for representing Unity in front of the developer community at large, engaging with creators online and at events and conventions.</p>
+                  <p class="experience-description">I was also responsible for producing and delivering technical demo content, which involved working with the new features of the engine in order to showcase them to our community in the context of a working project.</p>
+                </div>
+              </li>
             </ul>
-            <!-- <p>You can also find me on social media:</p>
-            <ul class="list-inline">
-                <li><a href="https://github.com/Lasirena"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/aliceon/"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a></li>
-                <li><a href="https://twitter.com/AliceOnys"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.instagram.com/alicehintonjones/"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
-            </ul> -->
+            <hr class="section-divider-large">
+            <h1 class="experience-section-heading">Education</h1>
+            <ul class="experience-list">
+              <li class="experience-item" data-aos="fade-up">
+                  <img src="/img/logos/city-uni.png" alt="City, University of London Logo" class="experience-logo">
+                  <div class="experience-mid-content">
+                    <h3 class="experience-workplace">City, University of London</h3>
+                    <h4 class="experience-date">Sep 2016 - Jul 2020</h4>
+                  </div>
+                <div class="experience-right-content">
+                  <h3 class="experience-title">BSc Computer Science with Games Technology</h3>
+                  <p class="experience-description">Graduated with First-Class Honours (1:1). I studied software engineering concepts such as data structures, algorithms and algorithmic complexity, and engineering patterns; and how to apply them in the context of software and game development.</p>
+                  <p class="experience-description">Additionally, I learned about graphics and shader programming in OpenGL; as well as working with backend databases and their use in the web development context.</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- CONTACT-END -->
+      <!-- PROJECTS / MY WORK SECTION -->
+      <section class="section-projects" id="mywork">
+        <div class="container">
+          <h1 class="section-heading">My Work</h1>
+          <!-- <p>Below are some of the projects I have worked on.</p> -->
+          <!-- <p>You can filter projects by type of contribution.</p> -->
+          <ul class="projects-filter-list" data-aos="fade-up">
+            <li class="projects-filter">Any</li>
+            <li class="projects-filter">Programming</li>
+            <li class="projects-filter">Art</li>
+            <li class="projects-filter">Video Production & Editing</li>
+          </ul>
+        </div>
+        <div class="projects-list">
+          <!-- BG3 -->
+          <div class="project">
+            <div class="project-hero project-hero-bg3">
+              <div class="container media-container">
+                <div class="project-media" data-aos="fade-up">
+                  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/NOWGnC3h9WQ?controls=1" frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="wide-container" data-aos="fade-up">
+                <div class="container">
+                  <h1 class="project-title">Baldur's Gate 3</h1>
+                  <ul class="project-tech-list">
+                    <li class="project-tech-item"><span class="project-tech-heading">Engine:</span> Proprietary</li>
+                    <li class="project-tech-item"><span class="project-tech-heading">Platform:</span> PC</li>
+                    <li class="project-tech-item"><span class="project-tech-heading">Genre:</span> RPG, turn-based, top-down</li>
+                  </ul>
+                  <p class="project-description">Gather your party, and return to the Forgotten Realms in a tale of fellowship and betrayal, sacrifice and survival, and the lure of absolute power.</p>
+                  <p class="project-description">Mysterious abilities are awakening inside you, drawn from a Mind Flayer parasite planted in your brain. Resist, and turn darkness against itself. Or embrace corruption, and become ultimate evil.</p>
+                  <p class="project-description">From the creators of Divinity: Original Sin 2 comes a next-generation RPG, set in the world of Dungeons and Dragons.</p>
+                  <hr class="section-divider">
+                  <p class="project-description">My key contributions and responsibilities:</p>
+                  <ul class="project-feature-list">
+                    <li class="project-feature">The 2022 Game Awards trailer.</li>
+                    <li class="project-feature">"Of Valour and Lore" - a trailer announcing the Bard class.</li>
+                    <li class="project-feature">"Absolute Frenzy" - a trailer announcing the Barbarian class.</li>
+                    <li class="project-feature">TikTok content for the Larian Studios channel.</li>
+                  </ul>
+                  <button class="btn btn-show-more">Show Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Demonbound -->
+          <div class="project">
+            <div class="project-hero project-hero-demonbound">
+              <div class="container media-container">
+                <div class="project-media" data-aos="fade-up">
+                  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/45H0gP6XB6w?controls=1" frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="wide-container" data-aos="fade-up">
+                <div class="container">
+                  <h1 class="project-title">Demonbound</h1>
+                  <ul class="project-tech-list">
+                    <li class="project-tech-item"><span class="project-tech-heading">Engine:</span> Unity</li>
+                    <li class="project-tech-item"><span class="project-tech-heading">Platform:</span> PC</li>
+                    <li class="project-tech-item"><span class="project-tech-heading">Genre:</span> ARPG, top-down</li>
+                    <li class="project-tech-item"><span class="project-tech-heading">Team size:</span> 1</li>
+                    <li class="project-tech-item"><span class="project-tech-heading">Length of development:</span> 1 week</li>
+                  </ul>
+                  <p class="project-description">In this project, I wanted to focus on the creation of a procedural algorithm for dungeon-like environment generation. I developed this Diablo-inspired ARPG prototype as the result.</p>
+                  <hr class="section-divider">
+                  <button class="btn btn-show-more">Show Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Torrheim -->
+          <div class="project">
+            <div class="project-hero project-hero-torrheim">
+              <div class="container media-container">
+                <div class="project-media" data-aos="fade-up">
+                  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/ahpn5e7SGWI?controls=1" frameborder="0"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="wide-container" data-aos="fade-up">
+                <div class="container">
+                  <h1 class="project-title">Torrheim</h1>
+                  <ul class="project-tech-list">
+                    <li class="project-tech-item"><span class="project-tech-heading">Engine:</span> Unity</li>
+                    <li class="project-tech-item"><span class="project-tech-heading">Platform:</span> PC</li>
+                    <li class="project-tech-item"><span class="project-tech-heading">Genre:</span> Narrative-driven, 2D</li>
+                    <li class="project-tech-item"><span class="project-tech-heading">Team size:</span> 2</li>
+                    <li class="project-tech-item"><span class="project-tech-heading">Length of development:</span> 2 days</li>
+                  </ul>
+                  <p class="project-description">I created this project together with my colleague, Ciro, at Unity. We made it as the backbone for our short game development tutorial for Global Game Jam 2019.</p>
+                  <p class="project-description">Torrheim is a 2D top-down game with a focus on story. My colleague and I wanted to make use of the new 2D technologies of the Unity engine - the 2D Animation package and Hexagonal Tilemaps; as well as Scriptable Objects for game architecture.</p>
+                  <hr class="section-divider">
+                  <button class="btn btn-show-more">Show Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-minor-projects">
+          <div class="container">
+            <ul class="minor-projects-list">
+              <li class="minor-project-card" data-aos="fade-up">
+                <h1 class="project-title">Tunnel Surfer</h1>
+                <img src="/img/projects/tunnel-surfer.jpg" alt="">
+                  <ul class="project-tech-list">
+                    <li class="project-tech-item"><span class="project-tech-heading">Engine:</span> Custom (C++)</li>
+                    <li class="project-tech-item"><span class="project-tech-heading">Genre:</span> Narrative-driven, 2D</li>
+                    <li class="project-tech-item"><span class="project-tech-heading">Team size:</span> 1</li>
+                    <li class="project-tech-item"><span class="project-tech-heading">Length of development:</span> 3 weeks</li>
+                  </ul>
+                  <p class="project-description">I created this project together with my colleague, Ciro, at Unity. We made it as the backbone for our short game development tutorial for Global Game Jam 2019.</p>
+                  <button class="btn btn-show-more">Show Details</button>
+              </li>
+              <li class="minor-project-card" data-aos="fade-up">
+                <h1 class="project-title">Unity Royale</h1>
+                <img src="/img/projects/tunnel-surfer.jpg" alt="">
+                  <ul class="project-tech-list">
+                    <li class="project-tech-item"><span class="project-tech-heading">Engine:</span> Unity</li>
+                    <li class="project-tech-item"><span class="project-tech-heading">Genre:</span> Tower Defense</li>
+                    <li class="project-tech-item"><span class="project-tech-heading">Team size:</span> 2</li>
+                    <li class="project-tech-item"><span class="project-tech-heading">Length of development:</span> 3 weeks</li>
+                  </ul>
+                  <p class="project-description">Torrheim is a 2D top-down game with a focus on story. My colleague and I wanted to make use of the new 2D technologies of the Unity engine - the 2D Animation package and Hexagonal Tilemaps; as well as Scriptable Objects for game architecture.</p>
+                  <button class="btn btn-show-more">Show Details</button>
+              </li>
+              <li class="minor-project-card" data-aos="fade-up">
+                <h1 class="project-title">3D Fighter</h1>
+                <img src="/img/bg/bg3_gry_01.jpg" alt="">
+                <ul class="project-tech-list">
+                  <li class="project-tech-item"><span class="project-tech-heading">Engine:</span> Unity</li>
+                  <li class="project-tech-item"><span class="project-tech-heading">Genre:</span> Fighting game</li>
+                  <li class="project-tech-item"><span class="project-tech-heading">Team size:</span> 4</li>
+                  <li class="project-tech-item"><span class="project-tech-heading">Length of development:</span> 2 days</li>
+                </ul>
+                <p class="project-description">Torrheim is a 2D top-down game with a focus on story. My colleague and I wanted to make use of the new 2D technologies of the Unity engine - the 2D Animation package and Hexagonal Tilemaps; as well as Scriptable Objects for game architecture.</p>
+                <button class="btn btn-show-more">Show Details</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT ME -->
+      <section class="section-aboutme">
+        <div class="wide-container">
+          <div class="container">
+            <h1 class="section-heading">About Me</h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- CV -->
+      <section class="section-cv">
+
+      </section>
+
+      <!-- CONTACT FORM -->
+      <section class="section-contact">
+
+      </section>
+    </main>
 
     <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-left">
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item"><a href="#experience">Experience</a></li>
+              <li class="footer-nav-item"><a href="#mywork">My Work</a></li>
+              <li class="footer-nav-item"><a href="#skills">Skills</a></li>
+              <li class="footer-nav-item"><a href="#aboutme">About Me</a></li>
+              <li class="footer-nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-right">
+          © 2023 Alice Hinton-Jones. All rights reserved.
+        </div>
+      </div>
+    </footer>
 
-    <div class="footer">
-    	<div class="container">
-    		<div class="row">
-
-    			<div class="col-lg-6 col-md-6">
-    				<a href="http://alicehintonjones.com"><img src="img/logolight.png"></a>
-    				<p>Copyright &copy; Alice Hinton-Jones 2017-2020</p>
-    			</div>
-
-    			<div class="col-lg-6 col-md-6 footer-right">
-    				<h1>CONTACT ME</h1>
-            		<p>For all website-related queries please e-mail <a href="mailto:contact@alicehintonjones.com">contact@alicehintonjones.com</a>.</p>
-    			</div>
-
-    		</div>
-    	</div>
-    </div>
-
-    <!-- FOOTER-END -->
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/ccw.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
