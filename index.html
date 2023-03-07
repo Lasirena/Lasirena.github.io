@@ -26,9 +26,8 @@
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item nav-item-emphasized"><a href="#mywork">My Work</a></li>
-            <li class="nav-item"><a href="#aboutme">About Me</a></li>
-            <li class="nav-item"><a href="#skills">CV</a></li>
             <li class="nav-item"><a href="#contact">Contact</a></li>
+            <li class="nav-item"><a href="#cv">CV</a></li>
           </ul>
         </nav>
       </div>
@@ -146,6 +145,9 @@
               <div class="wide-container" data-aos="fade-up">
                 <div class="container">
                   <h1 class="project-title">Baldur's Gate 3</h1>
+                  <ul class="project-tag-list">
+                    <li class="project-tag">Video Production & Editing</li>
+                  </ul>
                   <ul class="project-tech-list">
                     <li class="project-tech-item"><span class="project-tech-heading">Engine:</span> Proprietary</li>
                     <li class="project-tech-item"><span class="project-tech-heading">Platform:</span> PC</li>
@@ -157,10 +159,10 @@
                   <hr class="section-divider">
                   <p class="project-description">My key contributions and responsibilities:</p>
                   <ul class="project-feature-list">
-                    <li class="project-feature">The 2022 Game Awards trailer.</li>
-                    <li class="project-feature">"Of Valour and Lore" - a trailer announcing the Bard class.</li>
-                    <li class="project-feature">"Absolute Frenzy" - a trailer announcing the Barbarian class.</li>
-                    <li class="project-feature">TikTok content for the Larian Studios channel.</li>
+                    <li class="project-feature">Building the creative and narrative foundation for Baldur's Gate 3 trailers.</li>
+                    <li class="project-feature">Responsible for all stages of production: pitching, storyboarding, capturing, editing, and post.</li>
+                    <li class="project-feature">Major contributions: The PS5 announcement trailer; The 2022 Game Awards trailer; "Of Valour and Lore" - a trailer announcing the Bard class; "Absolute Frenzy" - a trailer announcing the Barbarian class.</li>
+                    <li class="project-feature">Additionally produced media for the press kits, videos for the Larian Studios TikTok channel, and other social media content.</li>
                   </ul>
                   <button class="btn btn-show-more">Show Details</button>
                 </div>
@@ -181,6 +183,10 @@
               <div class="wide-container" data-aos="fade-up">
                 <div class="container">
                   <h1 class="project-title">Demonbound</h1>
+                  <ul class="project-tag-list">
+                    <li class="project-tag">Programming</li>
+                    <li class="project-tag">Art</li>
+                  </ul>
                   <ul class="project-tech-list">
                     <li class="project-tech-item"><span class="project-tech-heading">Engine:</span> Unity</li>
                     <li class="project-tech-item"><span class="project-tech-heading">Platform:</span> PC</li>
@@ -209,6 +215,9 @@
               <div class="wide-container" data-aos="fade-up">
                 <div class="container">
                   <h1 class="project-title">Torrheim</h1>
+                  <ul class="project-tag-list">
+                    <li class="project-tag">Art</li>
+                  </ul>
                   <ul class="project-tech-list">
                     <li class="project-tech-item"><span class="project-tech-heading">Engine:</span> Unity</li>
                     <li class="project-tech-item"><span class="project-tech-heading">Platform:</span> PC</li>
@@ -225,7 +234,8 @@
             </div>
           </div>
         </div>
-        <div class="section-minor-projects">
+        <!-- TODO: RE-ENABLE SECTION WHEN MORE PROJECTS ARE AVAILABLE -->
+        <!-- <div class="section-minor-projects">
           <div class="container">
             <ul class="minor-projects-list">
               <li class="minor-project-card" data-aos="fade-up">
@@ -266,26 +276,68 @@
               </li>
             </ul>
           </div>
-        </div>
+        </div> -->
       </section>
 
       <!-- ABOUT ME -->
       <section class="section-aboutme">
+          <div class="container">
+            <h1 class="aboutme-section-heading">About Me</h1>
+            <ul class="aboutme-col-list">
+              <li class="aboutme-col-left">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat optio quisquam veritatis repudiandae animi quam nobis tenetur tempora iste? Distinctio nemo adipisci quasi vel, et assumenda deserunt expedita eveniet unde?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis quo libero fuga omnis quod quia quam ad labore possimus ullam, alias consectetur quaerat harum molestiae quasi vel accusamus magni fugit.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis atque laudantium odio eum dolore omnis illum officiis veniam adipisci repudiandae. Voluptate quia necessitatibus eveniet? Veritatis, neque? Rerum aut quia voluptates?</p>
+                <!-- <h2 id="cv" class="section-heading">CV</h2> -->
+              </li>
+              <li class="aboutme-col-right"><img src="/img/avatar/self2.jpg" alt="" class="aboutme-image"></li>
+            </ul>
+            <div class="aboutme-cv-section" id="cv">
+              <p>A PDF copy of my CV/resume is available for download here:</a></p>
+              <button class="btn">Download CV</button>
+            </div>
+          </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section-contact">
         <div class="wide-container">
           <div class="container">
-            <h1 class="section-heading">About Me</h1>
+            <h1 id="contact" class="contact-section-heading">Get in touch</h1>
+            <ul class="contact-col-list">
+              <li class="contact-col">
+                <p>If you'd like to discuss business opportunities or working with me, please reach out to me via this form. Alternatively, you can send me an email, or find me on LinkedIn.</p>
+                <p>I look forward to hearing from you!</p>
+                <ul class="contact-type-list">
+                  <li class="contact-type">contact@alicehintonjones.com</li>
+                  <li class="contact-type">LinkedIn</li>
+                </ul>
+              </li>
+              <li class="contact-col">
+                <form class="contact-form" action="https://formspree.io/f/xpzergbg" method="POST">
+                  <label>
+                    Your email:
+                    <input type="email" name="email">
+                  </label>
+                  <label for="">
+                    Subject:
+                    <input type="text" name="subject">
+                  </label>
+                  <label>
+                    Your message:
+                    <textarea name="message"></textarea>
+                  </label>
+                  <!-- your other form fields go here -->
+                  <button type="submit" class="btn">Submit</button>
+                </form>
+              </li>
+            </ul>
+            
+            <!-- <h1 id="cv" class="section-heading">CV</h1>
+            <p>A PDF copy of my CV/resume is available for download here:</a></p>
+            <button class="btn">Download CV</button> -->
           </div>
         </div>
-      </section>
-
-      <!-- CV -->
-      <section class="section-cv">
-
-      </section>
-
-      <!-- CONTACT FORM -->
-      <section class="section-contact">
-
       </section>
     </main>
 
@@ -297,9 +349,8 @@
             <ul class="footer-nav-list">
               <li class="footer-nav-item"><a href="#experience">Experience</a></li>
               <li class="footer-nav-item"><a href="#mywork">My Work</a></li>
-              <li class="footer-nav-item"><a href="#skills">Skills</a></li>
-              <li class="footer-nav-item"><a href="#aboutme">About Me</a></li>
               <li class="footer-nav-item"><a href="#contact">Contact</a></li>
+              <li class="footer-nav-item"><a href="#cv">CV</a></li>
             </ul>
           </nav>
         </div>

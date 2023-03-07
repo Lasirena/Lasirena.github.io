@@ -234,6 +234,7 @@ img {
 .experience-section-heading {
     margin-top: 0;
     margin-bottom: 1.5em;
+    text-align: center;
 }
 
 /* ========================================================================================== */
@@ -242,6 +243,7 @@ img {
 
 .section-projects {
     padding-top: 135px;
+    padding-bottom: 75px; /* TODO: remove once minor projects section is re-enabled */
     background-color: #131313;
     color: white;
 }
@@ -251,6 +253,7 @@ img {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
 .projects-filter {
@@ -269,8 +272,22 @@ img {
     cursor: pointer;
 }
 
-.projects-filter:not(:last-child) {
-    margin-right: 15px;
+.project-tag-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.project-tag {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    background-color: #196359;
+    /* border: 1.5px solid #1e8d75; */
+    padding: 10px 15px 8px 15px;
 }
 
 .projects-list {
@@ -396,7 +413,70 @@ img {
 /* ========================================================================================== */
 
 .section-aboutme {
+    color: white;
+    padding-bottom: 75px;
+}
+
+.aboutme-section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.aboutme-col-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 5%;
+    margin-bottom: 50px;
+}
+
+.aboutme-col-left {
+    flex-basis: 70%;
+}
+
+.aboutme-col-right {
+    flex-basis: 20%;
+}
+
+.aboutme-image {
+    max-width: 100%;
+    border-radius: 100%;
+}
+
+.aboutme-cv-section {
+    text-align: center;
+}
+
+/* ========================================================================================== */
+/* CONTACT SECTION STYLES */
+/* ========================================================================================== */
+
+.section-contact {
     padding-top: 75px;
+}
+
+.contact-section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-col-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 5%;
+}
+
+.contact-col {
+    flex-basis: 50%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /* ========================================================================================== */

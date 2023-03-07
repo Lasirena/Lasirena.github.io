@@ -3,4 +3,4 @@ This is my personal portfolio website repo.
 
 ## Built with:
 - HTML/CSS
-- Bootstrap 3
+- JS
