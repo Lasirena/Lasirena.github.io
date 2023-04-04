@@ -285,10 +285,11 @@ img {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 0.08em;
+    color: white;
     background: none;
     border: 1.5px solid white;
     /* border-radius: 30px; */
-    padding: 15px 20px 13px 20px;
+    padding: 20px 20px 18px 20px;
     transition: all 0.3s;
 }
 
@@ -296,6 +297,11 @@ img {
     background-color: #6858cf;
     border-color: #6858cf;
     cursor: pointer;
+}
+
+.projects-filter-active {
+    background-color: #4B466B;
+    border-color: #4B466B;
 }
 
 .project-tag-list {

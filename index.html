@@ -129,15 +129,15 @@
           <!-- <p>Below are some of the projects I have worked on.</p> -->
           <!-- <p>You can filter projects by type of contribution.</p> -->
           <ul class="projects-filter-list" data-aos="fade-up">
-            <li class="projects-filter">Any</li>
-            <li class="projects-filter">Art</li>
-            <li class="projects-filter">Programming</li>
-            <li class="projects-filter">Video Production & Editing</li>
+            <li><button id="project-filter-button-all" class="projects-filter projects-filter-active" onclick="removeProjectFilters('project-filter-button-all')">All</button></li>
+            <li><button id="projects-filter-button-art" class="projects-filter" onclick="filterProjects('project-label-art', 'projects-filter-button-art')">Art</button></li>
+            <li><button id="projects-filter-button-programming" class="projects-filter" onclick="filterProjects('project-label-programming', 'projects-filter-button-programming')">Programming</button></li>
+            <li><button id="projects-filter-button-video" class="projects-filter" onclick="filterProjects('project-label-video', 'projects-filter-button-video')">Video Production & Editing</button></li>
           </ul>
         </div>
         <div class="projects-list">
           <!-- BG3 -->
-          <div class="project">
+          <div class="project project-label-video">
             <div class="project-hero project-hero-bg3">
               <div class="container media-container">
                 <div class="project-media" data-aos="fade-up">
@@ -178,7 +178,7 @@
           </div>
 
           <!-- Demonbound -->
-          <div class="project">
+          <div class="project project-label-art project-label-programming">
             <div class="project-hero project-hero-demonbound">
               <div class="container media-container">
                 <div class="project-media" data-aos="fade-up">
@@ -212,7 +212,7 @@
           </div>
 
           <!-- Torrheim -->
-          <div class="project">
+          <div class="project project-label-art">
             <div class="project-hero project-hero-torrheim">
               <div class="container media-container">
                 <div class="project-media" data-aos="fade-up">
