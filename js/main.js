@@ -1,10 +1,35 @@
-// Unhide all elements with .project class
-function unhideAllProjects() {
+const projectLabelArt = "project-label-art";
+
+// Show all elements with .project class
+function showAllProjects() {
     var allProjects = document.getElementsByClassName("project");
     for (let project of allProjects) {
         if (project.classList.contains("hidden")) {
             project.classList.remove("hidden");
         }
+    }
+
+    var allMinorProjects = document.getElementsByClassName("minor-project-card");
+    for (let project of allMinorProjects) {
+        if (project.classList.contains("hidden")) {
+            project.classList.remove("hidden");
+        }
+    }
+}
+
+// Show Artboard section
+function showArtboard() {
+    var board = document.getElementById("artboard");
+    if (board.classList.contains("hidden")) {
+        board.classList.remove("hidden");
+    }
+}
+
+// Hide Artboard section
+function hideArtboard() {
+    var board = document.getElementById("artboard");
+    if (!board.classList.contains("hidden")) {
+        board.classList.add("hidden");
     }
 }
 
@@ -20,7 +45,8 @@ function deactivateFilterButtons() {
 
 // Filter projects display to only one selected category
 function filterProjects(filterCategoryLabel, filterButtonId) {
-    unhideAllProjects();
+    showAllProjects();
+    showArtboard();
     deactivateFilterButtons();
 
     // Activate the corresponding button
@@ -37,12 +63,25 @@ function filterProjects(filterCategoryLabel, filterButtonId) {
         }
     }
 
+    var allMinorProjects = document.getElementsByClassName("minor-project-card");
+    for (let project of allMinorProjects) {
+        if (!project.classList.contains(filterCategoryLabel)) {
+            project.classList.add("hidden");
+        }
+    }
+
+    // Check if Artboard has to be excluded
+    if (filterCategoryLabel != projectLabelArt) {
+        hideArtboard();
+    }
+
     AOS.refresh();
 }
 
 // Unfilter projects display
 function removeProjectFilters(buttonLabel) {
-    unhideAllProjects();
+    showAllProjects();
+    showArtboard();
     deactivateFilterButtons();
 
     // Mark the unfilter button as active
@@ -65,4 +104,14 @@ function toggleContentVisibility(elementId, buttonId) {
     }
 
     AOS.refresh();
+}
+
+// Show description for an art piece on element hover
+function toggleImageDescription(descriptionId) {
+    var description = document.getElementById(descriptionId);
+    if (description.classList.contains("hidden")) {
+        description.classList.remove("hidden");
+    } else {
+        description.classList.add("hidden");
+    }
 }
