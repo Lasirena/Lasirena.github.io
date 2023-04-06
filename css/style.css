@@ -793,7 +793,17 @@ textarea {
 /* ADAPTIVE/MOBILE STYLES */
 /* ========================================================================================== */
 
+@media (max-width: 1300px) {    
 
+    .image-overlay-description {
+        padding: 0 40px 0 40px;
+    }
+
+    .image-overlay-description h1 {
+        line-height: 1.2em;
+    }
+}
+ 
 @media (max-width: 980px) {
 
     .experience-item {
