@@ -339,34 +339,58 @@
           </div>
         </section>
 
+        <!-- ARTBOARD -->
+
         <section class="section-artboard" id="artboard">
           <div class="container">
             <h1 class="section-heading artboard-section-heading" data-aos="fade-up">Art Board</h1>
             <ul class="artboard">
-              <li class="artboard-item" data-aos="fade-up" onmouseenter="toggleImageDescription('art-desc-1')" onmouseleave="toggleImageDescription('art-desc-1')">
-                <img src="/img/artboard/malenia.jpg" alt="" class="artboard-item-image">
-                <div class="artboard-item-description hidden" id="art-desc-1">
+              <li class="artboard-item art-flex-third" data-aos="fade-up">
+                <img onclick="expandImage(this.src)" src="/img/artboard/malenia.jpg" alt="Image of Malenia stitching her arm with the Unalloyed Gold Needle." class="artboard-item-image"
+                data-title="Malenia and the Unalloyed Gold Needle"
+                data-description="I'm a big fan of Elden Ring, and once I finished the game, I wanted to make art. In this painting, I wanted to illustrate what a younger Malenia may have looked like when she was using the Unalloyed Gold Needle to prevent the Scarlet Rot from taking over parts of her body. I thought that a literal interpretation of her using the needle was most fitting to her portrayal in the story of the game.">
+                <div class="artboard-item-description">
                   <h3>Malenia and the Unalloyed Gold Needle</h3>
                   <p>Fanart - Elden Ring</p>
                 </div>
               </li>
-              <li class="artboard-item" data-aos="fade-up" onmouseenter="toggleImageDescription('art-desc-3')" onmouseleave="toggleImageDescription('art-desc-3')">
-                <img src="/img/artboard/ladymaria.jpg" alt="" class="artboard-item-image">
-                <div class="artboard-item-description hidden" id="art-desc-3">
+              <li class="artboard-item art-flex-third" data-aos="fade-up">
+                <img onclick="expandImage(this.src)" src="/img/artboard/ladymaria.jpg" alt="Image of Lady Maria from Bloodborne." class="artboard-item-image"
+                data-title="Lady Maria"
+                data-description="Bloodborne is one of my favourite games, and among other things, it inspired this simple portrait.">
+                <div class="artboard-item-description">
                   <h3>Lady Maria</h3>
                   <p>Fanart - Bloodborne</p>
                 </div>
               </li>
-              <li class="artboard-item" data-aos="fade-up" onmouseenter="toggleImageDescription('art-desc-4')" onmouseleave="toggleImageDescription('art-desc-4')">
-                <img src="/img/artboard/jinx.jpg" alt="" class="artboard-item-image">
-                <div class="artboard-item-description hidden" id="art-desc-4">
+              <li class="artboard-item art-flex-third" data-aos="fade-up">
+                <img onclick="expandImage(this.src)" src="/img/artboard/abigail.jpg" alt="Character portrait of a blonde woman with an azure necklace." class="artboard-item-image"
+                data-title="Abigail - D&D Portrait"
+                data-description="I created this portrait for one of my D&D characters, a sorceress named Abigail Withermere. The neckalce she wears, though a pretty thing at first glance, is, in fact, a kill switch. Created by the self-proclaimed deity Kyra, such 'collars' are used to oppress and control all magic-wielders of the Golden City - and to unquestioningly subjugate them to Kyra's will.">
+                <div class="artboard-item-description">
+                  <h3>Abigail - D&D Portrait</h3>
+                  <p>Personal Work</p>
+                </div>
+              </li>
+              <li class="artboard-item art-flex-half" data-aos="fade-up">
+                <img onclick="expandImage(this.src)" src="/img/artboard/jinx.jpg" alt="Image of Jinx from Arcane / League of Legends." class="artboard-item-image"
+                data-title="Jinx"
+                data-description="To this day, I consider Arcane to be the pinnacle of 3D animation in recent years. This work was an exploration of the unique art style of the show, mixed with a touch of my own.">
+                <div class="artboard-item-description">
                   <h3>Jinx</h3>
                   <p>Fanart - Arcane</p>
                 </div>
               </li>
-              <li class="artboard-item" data-aos="fade-up" onmouseenter="toggleImageDescription('art-desc-2')" onmouseleave="toggleImageDescription('art-desc-2')">
-                <img src="/img/artboard/thumbnails-growth.jpg" alt="" class="artboard-item-image">
-                <div class="artboard-item-description hidden" id="art-desc-2">
+              <li class="artboard-item art-flex-half" data-aos="fade-up">
+                <img onclick="expandImage(this.src)" src="/img/artboard/unity-royale.jpg" alt="Character portrait of a blonde woman with an azure necklace." class="artboard-item-image">
+                <div class="artboard-item-description">
+                  <h3>Unity Royale - UI Assets</h3>
+                  <p>Unity Technologies</p>
+                </div>
+              </li>
+              <li class="artboard-item art-flex-third" data-aos="fade-up">
+                <img onclick="expandImage(this.src)" src="/img/artboard/thumbnails-growth.jpg" alt="Character thumbnail sketches on the theme 'growth'." class="artboard-item-image">
+                <div class="artboard-item-description">
                   <h3>Character Concept Thumbnails - "Growth"</h3>
                   <p>Personal Work</p>
                 </div>
@@ -374,6 +398,12 @@
             </ul>
           </div>
         </section>
+
+        <!-- ART IMAGE FIXED OVERLAY -->
+        <div class="artboard-image-overlay" id="artboard-image-overlay" onclick="closeImageOverlay()">
+          <span class="image-overlay-close" onclick="closeImageOverlay()">&times;</span>
+          <img class="artboard-image-overlay-content" id="img-slot">
+        </div>
       </section>
 
       <!-- ABOUT ME -->

@@ -1,4 +1,5 @@
 const projectLabelArt = "project-label-art";
+const imageOverlay = document.getElementById("artboard-image-overlay");
 
 // Show all elements with .project class
 function showAllProjects() {
@@ -106,12 +107,14 @@ function toggleContentVisibility(elementId, buttonId) {
     AOS.refresh();
 }
 
-// Show description for an art piece on element hover
-function toggleImageDescription(descriptionId) {
-    var description = document.getElementById(descriptionId);
-    if (description.classList.contains("hidden")) {
-        description.classList.remove("hidden");
-    } else {
-        description.classList.add("hidden");
-    }
+function closeImageOverlay() {
+    var overlay = document.getElementById("artboard-image-overlay");
+    overlay.style.display = "none";
+}
+
+function expandImage(imageSrc) {
+    var overlay = document.getElementById("artboard-image-overlay");
+    var imageSlot = document.getElementById("img-slot");
+    overlay.style.display = "block";
+    imageSlot.src = imageSrc;
 }
