@@ -346,7 +346,7 @@
             <h1 class="section-heading artboard-section-heading" data-aos="fade-up">Art Board</h1>
             <ul class="artboard">
               <li class="artboard-item art-flex-half" data-aos="fade-up">
-                <video onclick="expandArt('video', this)" class="artboard-item-image" autoplay loop src="/video/artboard/vfx-orbs-3.mp4"
+                <video onclick="expandArt('video', this)" class="artboard-item-image" playsinline autoplay muted loop src="/video/artboard/vfx-orbs-3.mp4"
                 data-title="Resource Orbs"
                 data-description1="This realtime effect is made in Unity, using a custom shader. I wanted to emulate the appearance of resource orb UI from Diablo 3."
                 data-description2="While the spheres appear three-dimensional, they are actually made with a planar circular mesh with modified UV coordinates. The warped UV creates the illusion of three-dimensional form."
@@ -357,7 +357,7 @@
                 </div>
               </li>
               <li class="artboard-item art-flex-half" data-aos="fade-up">
-                <video onclick="expandArt('video', this)" class="artboard-item-image" autoplay loop src="/video/artboard/vfx-wings.mp4"
+                <video onclick="expandArt('video', this)" class="artboard-item-image" playsinline autoplay muted loop src="/video/artboard/vfx-wings.mp4"
                 data-title="Wings"
                 data-description1="Another realtime effect made with Unity. I wanted to re-create the angel wings seen in Diablo 3 and Heroes of the Storm."
                 data-description2="Each wing is made up of three deformed planes that are being affected by the engine physics, allowing the meshes to deform in tandem with the character movement."
@@ -441,7 +441,7 @@
             </div>
           </div>
           <img class="artboard-image-overlay-content" id="img-slot">
-          <video autoplay loop controls class="artboard-video-overlay-content" id="video-slot"></video>
+          <video playsinline autoplay muted loop controls class="artboard-video-overlay-content" id="video-slot"></video>
         </div>
       </section>
 
