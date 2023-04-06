@@ -112,9 +112,39 @@ function closeImageOverlay() {
     overlay.style.display = "none";
 }
 
-function expandImage(imageSrc) {
+function expandArt(type, element) {
     var overlay = document.getElementById("artboard-image-overlay");
     var imageSlot = document.getElementById("img-slot");
+    var videoSlot = document.getElementById("video-slot");
+    var titleSlot = document.getElementById("title-slot");
+    var descriptionSlot1 = document.getElementById("description-slot-1");
+    var descriptionSlot2 = document.getElementById("description-slot-2");
+    var descriptionSlot3 = document.getElementById("description-slot-3");
+
     overlay.style.display = "block";
-    imageSlot.src = imageSrc;
+
+    if (type === "video") {
+        imageSlot.style.display = "none";
+        videoSlot.style.display = "block";
+        videoSlot.src = element.src;
+    } else if (type === "img") {
+        imageSlot.style.display = "block";
+        videoSlot.style.display = "none";
+        imageSlot.src = element.src;
+    }
+
+    titleSlot.innerHTML = element.dataset.title;
+    descriptionSlot1.innerHTML = element.dataset.description1;
+
+    if (element.dataset.description2 != undefined) {
+        descriptionSlot2.innerHTML = element.dataset.description2;
+    } else {
+        descriptionSlot2.innerHTML = "";
+    }
+
+    if (element.dataset.description3 != undefined) {
+        descriptionSlot3.innerHTML = element.dataset.description3;
+    } else {
+        descriptionSlot3.innerHTML = "";
+    }
 }

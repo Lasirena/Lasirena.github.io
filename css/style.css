@@ -551,7 +551,7 @@ img {
 }
 
 .art-flex-half {
-    flex-basis: 550px;
+    flex-basis: 565px;
 }
 
 .art-flex-large {
@@ -587,7 +587,7 @@ img {
     display: none;
     z-index: 101;
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     left: 0;
     top: 0;
     width: 100%;
@@ -599,6 +599,13 @@ img {
 }
 
 .artboard-image-overlay-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.artboard-video-overlay-content {
     margin: auto;
     display: block;
     width: 80%;
@@ -618,6 +625,13 @@ img {
 
 .image-overlay-close:hover {
     color: #6858cf;
+}
+
+.image-overlay-container {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 20px;
 }
 
 /* ========================================================================================== */
