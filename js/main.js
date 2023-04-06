@@ -1,6 +1,20 @@
 const projectLabelArt = "project-label-art";
 const imageOverlay = document.getElementById("artboard-image-overlay");
 
+
+// Animate mobile hamburger menu
+function animateElement(element) {
+    element.classList.toggle("animate");
+    toggleMobileNav();
+}
+
+// Toggle mobile navigation menu
+function toggleMobileNav() {
+    var header = document.getElementById("header");
+    console.log(header);
+    header.classList.toggle("animate");
+}
+
 // Show all elements with .project class
 function showAllProjects() {
     var allProjects = document.getElementsByClassName("project");
@@ -107,11 +121,13 @@ function toggleContentVisibility(elementId, buttonId) {
     AOS.refresh();
 }
 
+// Close the full page overlay
 function closeImageOverlay() {
     var overlay = document.getElementById("artboard-image-overlay");
     overlay.style.display = "none";
 }
 
+// Show the full page overlay with expanded art project
 function expandArt(type, element) {
     var overlay = document.getElementById("artboard-image-overlay");
     var imageSlot = document.getElementById("img-slot");

@@ -20,11 +20,17 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
-    <header class="header">
-      <div class=" header-container">
+    <header class="header" id="header">
+      <div class="header-container">
         <a href="" class="site-title">
           Alice Hinton-Jones
         </a>
+        <div class="nav-mobile-button" onclick="animateElement(this)">
+          <div class="nav-mobile-bar-1"></div>
+          <div class="nav-mobile-bar-2"></div>
+          <div class="nav-mobile-bar-3"></div>
+        </div>
+        <!-- <div class="flex-break"></div> -->
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-item nav-item-emphasized"><a href="#mywork">My Work</a></li>

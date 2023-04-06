@@ -162,6 +162,12 @@ img {
     flex-basis: 65%;
 }
 
+.flex-break {
+    height: 0;
+    flex-basis: 100%;
+    display: none;
+}
+
 /* ========================================================================================== */
 /* BUTTON STYLES */
 /* ========================================================================================== */
@@ -249,6 +255,10 @@ img {
     color: white;
     background-color: #6858cf;
     border-color: #6858cf;
+}
+
+.nav-mobile-button {
+    display: none;
 }
 
 /* ========================================================================================== */
@@ -838,6 +848,119 @@ textarea {
 }
 
 @media (max-width: 768px) {
+
+    /* HEADER */
+
+    .animate.header {
+        height: fit-content;
+        height: 250px;
+    }
+
+    .header {
+        background-color: black;
+        overflow: hidden;
+        height: 70px;
+        max-height: 250px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        transition: all 0.6s;
+    }
+
+    /* MOBILE NAVIGATION */
+
+    .flex-break {
+        display: block;
+    }
+    
+    .header-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .site-title {
+        display: none;
+        margin-right: auto;
+        text-transform: uppercase;
+        font-family: 'roboto';
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        transition: all 0.3s;
+    }
+    
+    .site-title:hover {
+        color: #6858cf;
+    }
+    
+    .nav {
+        width: 100%;
+        display: block;
+    }
+    
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    
+    .nav-item {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.5em;
+        letter-spacing: 0.1rem;
+        transition: all 0.3s;
+        margin-bottom: 30px;
+    }
+    
+    .nav-item-emphasized {
+        padding: 0;
+        border: none;
+    }
+
+    .nav-item-emphasized:hover {
+        background: none;
+        color: #6858cf;
+    }
+    
+    .nav-item:not(:last-child) {
+        margin-right: 0;
+    }
+
+    /* HAMBURGER MENU */
+
+    .nav-mobile-bar-1, .nav-mobile-bar-2, .nav-mobile-bar-3 {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin-bottom: 6px;
+        transition: 0.4s;
+    }
+
+    .animate .nav-mobile-bar-1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    .animate .nav-mobile-bar-2 {
+        opacity: 0;
+    }
+
+    .animate .nav-mobile-bar-3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+
+    .nav-mobile-button {
+        position: relative;
+        display: block;
+        cursor: pointer;
+    }
+
+    /* HERO */
 
     .section-hero {
         min-height: 600px;
