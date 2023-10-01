@@ -587,6 +587,7 @@ img {
 }
 
 .artboard-item-description {
+    pointer-events: none;
     position: absolute;
     z-index: 1;
     bottom: 0;
