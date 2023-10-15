@@ -33,7 +33,6 @@ rgb(72, 171, 196)*/
   content: '';
   transform: skewX(7deg);
   background-position: top left;
-  background-repeat: no-repeat;
   background-size: auto 100%;
   position: absolute;
   transform-origin: top left;
@@ -46,7 +45,7 @@ rgb(72, 171, 196)*/
 }
 
 .portfolio:hover::before {
-  opacity: 60%;
+  opacity: 100%;
 }
 
 .portfolio:first-of-type {
@@ -62,15 +61,15 @@ rgb(72, 171, 196)*/
 }
 
 .code::before {
-  background-image: url('../assets/img/backgrounds/circuits.jpg');
+  background-image: url('../assets/img/backgrounds/generated-09.svg');
 }
 
 .techart::before {
-  background-image: url('../assets/img/backgrounds/vfx-placeholder.png');
+  background-image: url('../assets/img/backgrounds/generated-02.svg');
 }
 
 .twodthreed::before {
-  background-image: url('../../img/artboard/jinx.jpg');
+  background-image: url('../assets/img/backgrounds/generated-10.svg');
 }
 
 .portfolio-title {
