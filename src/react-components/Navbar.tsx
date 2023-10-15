@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Navbar() {
   return (
     <header className="header" id="header">
@@ -13,14 +15,17 @@ function Navbar() {
         </div>
         <nav className="nav">
           <ul className="nav-list">
-            <li className="nav-item nav-item-emphasized">
-              <a href="#mywork">My Work</a>
+            <li className="nav-item">
+              <Link to={'/'}>Projects</Link>
             </li>
             <li className="nav-item">
-              <a href="#contact">Contact</a>
+              <Link to={'blog'}>Blog</Link>
             </li>
             <li className="nav-item">
-              <a href="#about">About Me</a>
+              <Link to={'about'}>About</Link>
+            </li>
+            <li className="nav-item">
+              <Link to={'contact'}>Contact</Link>
             </li>
           </ul>
         </nav>
