@@ -4,6 +4,9 @@ import App from './react-components/App.tsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomePage from './react-components/HomePage.tsx';
 import AboutPage from './react-components/AboutPage.tsx';
+import ProjectsCode from './react-components/ProjectsCode.tsx';
+import ProjectsTechArt from './react-components/ProjectsTechArt.tsx';
+import Projects2D3D from './react-components/Projects2D3D.tsx';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +20,18 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <AboutPage />,
+      },
+      {
+        path: '/code',
+        element: <ProjectsCode />,
+      },
+      {
+        path: '/techart',
+        element: <ProjectsTechArt />,
+      },
+      {
+        path: '/2d3d',
+        element: <Projects2D3D />,
       },
     ],
   },
