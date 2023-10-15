@@ -3,7 +3,7 @@ function AboutPage() {
     <>
       <section className="section-aboutme">
         <div className="container">
-          <h1 className="aboutme-section-heading">About Me</h1>
+          <h1 className="display-heading">About Me</h1>
           <ul className="aboutme-col-list">
             <li className="aboutme-col-left">
               <p>
@@ -53,7 +53,7 @@ function AboutPage() {
       </section>
       <section className="section-experience" id="experience">
         <div className="container">
-          <h1 className="experience-section-heading">Experience</h1>
+          <h1 className="display-heading">Experience</h1>
           <ul className="experience-list">
             <li className="experience-item">
               <img
@@ -120,7 +120,7 @@ function AboutPage() {
               </div>
             </li>
           </ul>
-          <h1 className="experience-section-heading">Education</h1>
+          <h1 className="display-heading">Education</h1>
           <ul className="experience-list">
             <li className="experience-item">
               <img

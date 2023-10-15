@@ -196,6 +196,17 @@ img {
 }
 
 /* ========================================================================================== */
+/* UNIVERSAL TYPEFONT STYLES */
+/* ========================================================================================== */
+
+.display-heading {
+  padding-left: 30px;
+  margin-bottom: 100px;
+  line-height: 130%;
+  border-left: solid 5px rgb(0, 255, 191);
+}
+
+/* ========================================================================================== */
 /* HEADER STYLES */
 /* ========================================================================================== */
 
@@ -351,9 +362,10 @@ img {
 }
 
 .experience-section-heading {
-  margin-top: 0;
-  margin-bottom: 1.5em;
-  text-align: center;
+  padding-left: 30px;
+  margin-bottom: 100px;
+  line-height: 130%;
+  border-left: solid 5px aqua;
 }
 
 .experience-list {
@@ -681,8 +693,10 @@ img {
 }
 
 .aboutme-section-heading {
-  text-align: center;
+  padding-left: 30px;
   margin-bottom: 100px;
+  line-height: 130%;
+  border-left: solid 5px aqua;
 }
 
 .aboutme-col-list {
