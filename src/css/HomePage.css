@@ -23,7 +23,6 @@ rgb(72, 171, 196)*/
   flex-direction: column;
   overflow: hidden;
   transition: all 0.3s;
-  border-right: solid 2px rgb(72, 171, 196);
   /* border: solid 2px rgba(0, 0, 0, 0); */
 }
 
@@ -51,7 +50,7 @@ rgb(72, 171, 196)*/
 }
 
 .portfolio:hover::before {
-  opacity: 30%;
+  opacity: 60%;
 }
 
 .portfolio:first-of-type {
@@ -62,22 +61,28 @@ rgb(72, 171, 196)*/
   margin-right: -200px;
 }
 
+.portfolio:last-of-type:hover::before {
+  margin-left: -250px;
+}
+
 .code::before {
-  background-image: url('../../img/bg/baldurs-gate-3-01.jpg');
+  background-image: url('../assets/img/backgrounds/circuits.jpg');
 }
 
 .techart::before {
-  background-image: url('../../img/bg/baldurs-gate-3-03.jpg');
+  background-image: url('../assets/img/backgrounds/vfx-placeholder.png');
 }
 
 .twodthreed::before {
-  background-image: url('../../img/bg/torrheim.png');
+  background-image: url('../../img/artboard/jinx.jpg');
 }
 
 .portfolio-title {
   transform: skewX(7deg);
-  font-size: 40px;
-  color: white;
+  font-size: 50px;
+  -webkit-text-stroke: 1px white;
+  color: rgba(0, 0, 0, 0);
+  transition: all 0.3s;
 }
 
 .title-first {
@@ -86,4 +91,16 @@ rgb(72, 171, 196)*/
 
 .title-last {
   margin-right: 200px;
+}
+
+.portfolio:hover .portfolio-title {
+  -webkit-text-stroke: 0px;
+  color: white;
+}
+
+.background-video {
+  transform: skewX(7deg);
+  position: absolute;
+  left: 100px;
+  top: 100px;
 }

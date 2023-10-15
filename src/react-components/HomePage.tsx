@@ -5,6 +5,9 @@ function HomePage() {
   return (
     <section className="section-portfolios">
       <Link to={'code'} className="portfolio code">
+        {/* <video className="background-video" autoPlay loop muted>
+          <source src={'../assets/video/vfx-wings.mp4'} type="video/mp4" />
+        </video> */}
         <h1 className="portfolio-title title-first">Code</h1>
       </Link>
       <Link to={'techart'} className="portfolio techart">
