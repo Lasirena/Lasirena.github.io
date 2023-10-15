@@ -324,6 +324,10 @@ img {
 /* EXPERIENCE STYLES */
 /* ========================================================================================== */
 
+.section-experience {
+  color: white;
+}
+
 .experience-item {
   display: flex;
   justify-content: space-between;
@@ -350,6 +354,10 @@ img {
   margin-top: 0;
   margin-bottom: 1.5em;
   text-align: center;
+}
+
+.experience-list {
+  padding-bottom: 75px;
 }
 
 /* ========================================================================================== */
@@ -668,12 +676,13 @@ img {
 
 .section-aboutme {
   color: white;
-  padding-bottom: 75px;
+  padding-top: 150px;
+  padding-bottom: 100px;
 }
 
 .aboutme-section-heading {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .aboutme-col-list {
@@ -682,11 +691,10 @@ img {
   align-items: center;
   flex-wrap: nowrap;
   gap: 5%;
-  margin-bottom: 50px;
 }
 
 .aboutme-col-left {
-  flex-basis: 70%;
+  flex-basis: 65%;
 }
 
 .aboutme-col-right {
