@@ -12,13 +12,12 @@ rgb(72, 171, 196)*/
 .portfolio {
   width: 100%;
   transform: skewX(-7deg);
-  text-align: center;
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 100%;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   flex-direction: column;
   overflow: hidden;
   transition: all 0.3s;
@@ -77,6 +76,7 @@ rgb(72, 171, 196)*/
 .portfolio-title {
   transform: skewX(7deg);
   font-size: 50px;
+  line-height: 150%;
   -webkit-text-stroke: 1px white;
   color: rgba(0, 0, 0, 0);
   transition: all 0.3s;
@@ -93,6 +93,7 @@ rgb(72, 171, 196)*/
 .portfolio:hover .portfolio-title {
   -webkit-text-stroke: 0px;
   color: white;
+  border-bottom: 5px solid rgb(0, 255, 191);
 }
 
 .background-video {
