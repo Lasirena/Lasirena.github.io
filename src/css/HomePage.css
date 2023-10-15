@@ -7,7 +7,7 @@ rgb(72, 171, 196)*/
   flex-basis: auto;
   justify-content: space-around;
   overflow: hidden;
-  background: url('../assets/img/backgrounds/generated-01.svg');
+  background: url('../assets/img/backgrounds/generated-02.svg');
 }
 
 .portfolio {
@@ -23,14 +23,12 @@ rgb(72, 171, 196)*/
   flex-direction: column;
   overflow: hidden;
   transition: all 0.3s;
-  /* border: solid 2px rgba(0, 0, 0, 0); */
+  /* border-right: solid 2px rgb(115, 72, 196); */
 }
 
 .portfolio:hover {
   background-color: black;
   flex-basis: 160%;
-  /* border-left: solid 2px rgba(139, 111, 170, 1);
-  border-right: solid 2px rgba(139, 111, 170, 1); */
 }
 
 .portfolio::before {
@@ -62,7 +60,7 @@ rgb(72, 171, 196)*/
 }
 
 .portfolio:last-of-type:hover::before {
-  margin-left: -250px;
+  /* margin-left: -250px; */
 }
 
 .code::before {
