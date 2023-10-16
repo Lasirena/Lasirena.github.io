@@ -43,7 +43,7 @@ function AboutPage() {
             </li>
             <li className="aboutme-col-right">
               <img
-                src="../../img/avatar/self2.jpg"
+                src={'./assets/img/avatar/self2.jpg'}
                 alt=""
                 className="aboutme-image"
               />
@@ -57,7 +57,7 @@ function AboutPage() {
           <ul className="experience-list">
             <li className="experience-item">
               <img
-                src="../../img/logos/larian-studios.png"
+                src="assets/img/logos/larian-studios.png"
                 alt="Larian Studios Logo"
                 className="experience-logo"
               />
@@ -76,7 +76,7 @@ function AboutPage() {
             </li>
             <li className="experience-item">
               <img
-                src="../../img/logos/unity.png"
+                src="assets/img/logos/unity.png"
                 alt="Unity Technologies Logo"
                 className="experience-logo"
               />
@@ -96,7 +96,7 @@ function AboutPage() {
             </li>
             <li className="experience-item">
               <img
-                src="../../img/logos/unity.png"
+                src="assets/img/logos/unity.png"
                 alt="Unity Technologies Logo"
                 className="experience-logo"
               />
@@ -124,7 +124,7 @@ function AboutPage() {
           <ul className="experience-list">
             <li className="experience-item">
               <img
-                src="../../img/logos/city-uni.png"
+                src="assets/img/logos/city-uni.png"
                 alt="City, University of London Logo"
                 className="experience-logo"
               />
