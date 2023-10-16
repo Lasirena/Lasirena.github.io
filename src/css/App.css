@@ -1,5 +1,6 @@
 .parallax-background {
   min-height: 100vh;
-  /* background: url('../assets/img/backgrounds/generated-01.svg'); */
+  /* background: url('../assets/img/backgrounds/generated-15.svg'); */
+  /* background: linear-gradient(180deg, rgb(0, 0, 8) 0%, rgb(34, 0, 48) 100%); */
   background-attachment: fixed;
 }

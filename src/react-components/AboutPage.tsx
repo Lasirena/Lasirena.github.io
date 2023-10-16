@@ -57,7 +57,7 @@ function AboutPage() {
           <ul className="experience-list">
             <li className="experience-item">
               <img
-                src="assets/img/logos/larian-studios.png"
+                src="assets/img/logos/larian-studios-new.png"
                 alt="Larian Studios Logo"
                 className="experience-logo"
               />
@@ -76,7 +76,7 @@ function AboutPage() {
             </li>
             <li className="experience-item">
               <img
-                src="assets/img/logos/unity.png"
+                src="assets/img/logos/unity-white.png"
                 alt="Unity Technologies Logo"
                 className="experience-logo"
               />
@@ -96,7 +96,7 @@ function AboutPage() {
             </li>
             <li className="experience-item">
               <img
-                src="assets/img/logos/unity.png"
+                src="assets/img/logos/unity-white.png"
                 alt="Unity Technologies Logo"
                 className="experience-logo"
               />
@@ -124,7 +124,7 @@ function AboutPage() {
           <ul className="experience-list">
             <li className="experience-item">
               <img
-                src="assets/img/logos/city-uni.png"
+                src="assets/img/logos/city-uni-02.png"
                 alt="City, University of London Logo"
                 className="experience-logo"
               />
