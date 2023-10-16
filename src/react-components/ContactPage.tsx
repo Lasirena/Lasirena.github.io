@@ -50,8 +50,9 @@ export function ContactPage() {
             <li className="contact-col">
               <form
                 className="contact-form"
-                action="https://formspree.io/f/xpzergbg"
+                name="contact-form"
                 method="POST"
+                data-netlify="true"
               >
                 <ul className="contact-form-fields">
                   <li className="contact-form-field">
