@@ -2,3 +2,57 @@
   padding-top: 25px;
   color: white;
 }
+
+.projects-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects-sidebar {
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  position: sticky;
+  top: 100px;
+  width: 16%;
+}
+
+/* .projects-sidebar li {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #4b466b;
+  border-radius: 5px;
+}
+
+.projects-sidebar li.active {
+  background-color: rgb(0, 255, 191);
+  color: black;
+  transform: translateX(30px);
+} */
+
+.projects-sidebar li {
+  margin-bottom: 20px;
+}
+
+.projects-sidebar li.active {
+  background-color: rgb(40, 103, 119);
+  transform: translate(30px, 0);
+}
+
+.projects-sidebar li.active span {
+  background-color: rgb(0, 255, 191);
+  color: black;
+}
+
+.projects-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.proj {
+  background-color: black;
+  width: 100%;
+  min-height: 200px;
+}

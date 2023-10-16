@@ -20,8 +20,6 @@ export function Breadcrumb() {
       );
     });
 
-  console.log(crumbs);
-
   return (
     <>
       <div className="container">

@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Demonbound",
+    "has-video": false,
+    "asset-path": "assets/img/projects/3d-fighter.jpg",
+    "tags": ["programming", "tech-art", "c#", "unity"],
+    "description": "Placeholder."
+  },
+  {
+    "id": 2,
+    "title": "Tunnel Surfer",
+    "has-video": false,
+    "asset-path": "assets/img/projects/tunnel-surfer.jpg",
+    "tags": ["programming", "glsl", "c++", "custom-engine"],
+    "description": "Placeholder."
+  }
+]
