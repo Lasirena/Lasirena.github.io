@@ -1,0 +1,18 @@
+.breadcrumb-list {
+  padding-top: 75px;
+  color: rgb(165, 165, 165);
+  display: flex;
+}
+
+.breadcrumb-list li {
+  margin-right: 10px;
+}
+
+.breadcrumb {
+  transition: all 0.3s;
+  text-transform: capitalize;
+}
+
+.breadcrumb:hover {
+  color: rgb(0, 255, 191);
+}

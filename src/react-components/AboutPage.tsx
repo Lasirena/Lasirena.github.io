@@ -1,6 +1,9 @@
+import { Breadcrumb } from './Breadcrumb';
+
 function AboutPage() {
   return (
     <>
+      <Breadcrumb />
       <section className="section-aboutme">
         <div className="container">
           <h1 className="display-heading">About Me</h1>

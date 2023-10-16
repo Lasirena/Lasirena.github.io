@@ -1,12 +1,16 @@
 import '../css/Projects.css';
+import { Breadcrumb } from './Breadcrumb';
 
 function ProjectsCode() {
   return (
-    <section className="projects-section">
-      <div className="container">
-        <h1 className="display-heading">Projects / Code</h1>
-      </div>
-    </section>
+    <>
+      <Breadcrumb />
+      <section className="projects-section">
+        <div className="container">
+          <h1 className="display-heading">Programming</h1>
+        </div>
+      </section>
+    </>
   );
 }
 
