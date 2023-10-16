@@ -124,7 +124,7 @@ function AboutPage() {
           <ul className="experience-list">
             <li className="experience-item">
               <img
-                src="assets/img/logos/city-uni-02.png"
+                src="assets/img/logos/city-uni-03.png"
                 alt="City, University of London Logo"
                 className="experience-logo"
               />

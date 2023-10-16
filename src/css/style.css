@@ -11,7 +11,7 @@
 html {
   font-size: 16px;
   line-height: 1.5em;
-  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  font-family: 'Poppins', 'Roboto', 'Segoe UI', sans-serif;
 }
 
 body {
@@ -178,21 +178,34 @@ img {
 /* ========================================================================================== */
 
 .btn {
-  font-weight: 400;
+  font-weight: bold;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: white;
-  background-color: #4b466b;
+  background-color: #28244e;
   line-height: 1;
-  padding: 15px 20px 13px 20px;
+  /* padding: 20px 40px 18px 45px; */
   border: none;
+  border-radius: 5px;
   outline: none;
   cursor: pointer;
   transition: all 0.3s;
+  display: inline-block;
 }
 
-.btn:hover {
-  background-color: #6858cf;
+.btn span {
+  display: block;
+  background: #6858cf;
+  padding: 20px 40px 18px 40px;
+  border-radius: 5px;
+  transform: translate3d(8px, -8px, 0);
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+  transition: all 0.3s;
+}
+
+.btn span:hover {
+  transform: translate3d(3px, -3px, 0);
+  /* background-color: #58cfcf; */
 }
 
 /* ========================================================================================== */
@@ -201,7 +214,7 @@ img {
 
 .display-heading {
   padding-left: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   line-height: 130%;
   border-left: solid 5px rgb(0, 255, 191);
 }
@@ -733,7 +746,8 @@ img {
 /* ========================================================================================== */
 
 .section-contact {
-  padding-top: 75px;
+  padding-top: 150px;
+  color: white;
 }
 
 .contact-section-heading {
@@ -756,7 +770,7 @@ img {
 }
 
 .contact-type-svg {
-  fill: black;
+  fill: rgb(0, 255, 191);
   transition: all 0.3s;
 }
 
@@ -776,15 +790,17 @@ img {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
 .contact-form-input-field {
   padding: 10px 10px 10px 10px;
-  border: 1px solid #b3b3b3;
-  background-color: #f5f5f5;
+  border: 1px solid #adadad;
+  border-radius: 5px;
+  background-color: #e4e4e4;
   width: 100%;
   font-size: 0.8em;
+  transition: all 0.15s;
 }
 
 input {
@@ -795,8 +811,9 @@ input {
 
 .contact-form-input-field:focus {
   background: white;
-  border-color: #6858cf;
-  outline: none;
+  border-color: #7a66ff;
+  filter: drop-shadow(0 0 4px #6858cf);
+  outline: solid 1px #6858cf;
 }
 
 textarea {
