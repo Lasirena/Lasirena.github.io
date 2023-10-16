@@ -1,0 +1,19 @@
+.error-page {
+  text-align: center;
+  color: white;
+  padding-top: 400px;
+}
+
+.error-title {
+  margin-bottom: 50px;
+  line-height: 130%;
+}
+
+.error-link {
+  color: rgb(0, 255, 191);
+  transition: all 0.3s;
+}
+
+.error-link:hover {
+  color: #6858cf;
+}
