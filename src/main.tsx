@@ -1,11 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './react-components/App.tsx';
-import {
-  createBrowserRouter,
-  RouterProvider,
-  HashRouter,
-} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomePage from './react-components/HomePage.tsx';
 import AboutPage from './react-components/AboutPage.tsx';
 import ProjectsCode from './react-components/ProjectsCode.tsx';
