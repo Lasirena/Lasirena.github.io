@@ -14,7 +14,7 @@
   flex-direction: column;
   position: sticky;
   top: 100px;
-  width: 20%;
+  width: 22%;
 }
 
 /* .projects-sidebar li {
@@ -29,6 +29,11 @@
   color: black;
   transform: translateX(30px);
 } */
+
+.projects-sidebar h3 {
+  margin-left: 10px;
+  margin-bottom: 25px;
+}
 
 .projects-sidebar li {
   margin-bottom: 20px;
@@ -45,7 +50,7 @@
 }
 
 .projects-container {
-  width: 78%;
+  width: 76%;
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
@@ -117,4 +122,9 @@
 }
 .proj-info-card a:hover {
   color: #7c67ff;
+}
+
+.wip {
+  font-style: normal;
+  color: rgb(255, 127, 155);
 }

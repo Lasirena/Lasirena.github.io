@@ -9,7 +9,7 @@ function ProjectsCode() {
       <Breadcrumb />
       <section className="projects-section">
         <div className="container">
-          <h1 className="display-heading">Programming</h1>
+          <h1 className="display-heading">Games</h1>
           <div className="projects-box">
             <ul className="projects-container">
               <li className="proj">
@@ -71,15 +71,30 @@ function ProjectsCode() {
                 </div>
               </li>
             </ul>
-            <ul className="projects-sidebar">
-              <li className="btn">
-                <span>Demonbound</span>
-              </li>
-              <li className="btn">
-                <span>Tunnel Surfer</span>
-              </li>
-            </ul>
+            <div className="projects-sidebar">
+              <h3>Games</h3>
+              <ul>
+                <li className="btn">
+                  <span>Demonbound</span>
+                </li>
+                <li className="btn">
+                  <span>Tunnel Surfer</span>
+                </li>
+              </ul>
+              <h3>Web Dev</h3>
+              <ul>
+                <li className="btn">
+                  <span>
+                    Artsource <em className="wip">(WIP)</em>
+                  </span>
+                </li>
+                <li className="btn">
+                  <span>Portfolio</span>
+                </li>
+              </ul>
+            </div>
           </div>
+          <h1 className="display-heading">Web Dev</h1>
         </div>
       </section>
     </>
