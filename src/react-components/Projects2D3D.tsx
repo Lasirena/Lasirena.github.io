@@ -7,7 +7,9 @@ function Projects2D3D() {
       <Breadcrumb />
       <section className="projects-section">
         <div className="container">
-          <h1 className="display-heading">2D & 3D Art</h1>
+          <h1 className="display-heading">Illustration</h1>
+          <h1 className="display-heading">Concept Art</h1>
+          <h1 className="display-heading">3D</h1>
         </div>
       </section>
     </>

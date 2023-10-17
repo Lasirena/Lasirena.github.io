@@ -912,6 +912,8 @@ textarea {
 
   .header {
     background-color: black;
+    position: sticky;
+    top: 0;
     overflow: hidden;
     height: 70px;
     max-height: 250px;
