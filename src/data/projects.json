@@ -1,18 +1,46 @@
 [
   {
     "id": 1,
+    "category": 1,
     "title": "Demonbound",
-    "has-video": false,
-    "asset-path": "assets/img/projects/3d-fighter.jpg",
-    "tags": ["programming", "tech-art", "c#", "unity"],
-    "description": "Placeholder."
+    "subtitle": "Procedural generation of 3D dungeon environments in an RPG game context.",
+    "media": [
+      "assets/img/projects/3d-fighter.jpg",
+      "assets/img/projects/royale.png"
+    ],
+    "playable-url": "https://lasirena.itch.io/demonbound",
+    "playable-title": "itch.io",
+    "tech-stack": ["C#", "Unity"],
+    "description": [
+      "In this personal project inspired by the Diablo games, I created a game prototype that uses a procedural algorithm for dungeon generation."
+    ],
+    "features": [
+      "Fully procedural and customizable 3D dungeon generation algorithm.",
+      "Room population algorithm based on 'theme' presets (implemented via Scriptable Objects).",
+      "New theme presets and props can be added to the population algorithm without the need to write any additional code.",
+      "Smart prop placement behaviour (e.g. avoidance of similar prop types, placement along walls or in room center, etc.)",
+      "Depth-based dissolve shader (to allow the player model to be visible behind walls)",
+      "2D minimap solution for procedural levels."
+    ]
   },
   {
     "id": 2,
+    "category": 1,
     "title": "Tunnel Surfer",
-    "has-video": false,
-    "asset-path": "assets/img/projects/tunnel-surfer.jpg",
-    "tags": ["programming", "glsl", "c++", "custom-engine"],
-    "description": "Placeholder."
+    "subtitle": "Spline-based game in pure C++ and OpenGL.",
+    "media": ["assets/img/projects/tunnel-surfer.jpg"],
+    "playable-url": "",
+    "playable-title": "",
+    "tech-stack": ["C++", "OpenGL"],
+    "description": [
+      "This game project was a way for me to learn how to implement a custom graphics renderer and graphics pipeline in a C++ game engine, and the creation of commonly encountered graphics shaders using OpenGL."
+    ],
+    "features": [
+      "Procedural mesh generation based on a Catmull-Rom spline (used to generate tunnel geometry)",
+      "Custom shader implementation of the Blinn-Phong model",
+      "Normal-mapping shader",
+      "Geometry shader for visual debugging of mesh normals",
+      "Implementation of different types of lighting (spot light, point light, directional light)"
+    ]
   }
 ]

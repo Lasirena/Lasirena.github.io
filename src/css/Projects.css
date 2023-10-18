@@ -79,6 +79,10 @@
   list-style-position: inside;
 }
 
+.proj video {
+  max-width: 100%;
+}
+
 .proj-heading {
   padding-left: 30px;
   margin-bottom: 30px;
