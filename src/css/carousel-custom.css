@@ -1,0 +1,12 @@
+.carousel .thumb {
+  border: none;
+  cursor: pointer;
+}
+
+.carousel .thumb:hover {
+  border: 1px solid #6858cf;
+}
+
+.carousel .thumb.selected {
+  border: 1px solid white;
+}
