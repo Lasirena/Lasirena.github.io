@@ -1,5 +1,6 @@
 .projects-section {
   padding-top: 25px;
+  margin-bottom: 50px;
   color: white;
 }
 
@@ -42,6 +43,12 @@
 
 .projects-container {
   width: 76%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.projects-container-nomenu {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;

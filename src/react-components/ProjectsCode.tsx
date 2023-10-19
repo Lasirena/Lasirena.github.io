@@ -3,7 +3,6 @@ import { Breadcrumb } from './Breadcrumb';
 import { ProjectCard } from './ProjectCard';
 import { ProjectMenuItem } from './ProjectMenuItem';
 import '../css/Projects.css';
-import '../css/carousel-custom.css';
 
 function ProjectsCode() {
   console.log(projectsList);

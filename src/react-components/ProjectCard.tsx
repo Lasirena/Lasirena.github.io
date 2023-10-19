@@ -2,6 +2,21 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '../css/carousel-custom.css';
 
+// TODO: make custom carousel implementation
+const getVideoThumbnail = (path: string) => {
+  const thumbnailPath = path.substring(0, path.indexOf('.mp4')) + '-thumb.png';
+  return <img src={thumbnailPath} />;
+};
+
+const CustomSlide = ({ assetUrl }: { assetUrl: string }) =>
+  assetUrl.endsWith('.mp4') ? (
+    <video muted autoPlay loop>
+      <source src={assetUrl} />
+    </video>
+  ) : (
+    <img src={assetUrl} alt="" />
+  );
+
 interface ProjectCardProps {
   id: number;
   title: string;
@@ -37,11 +52,10 @@ export function ProjectCard({
         emulateTouch={true}
         dynamicHeight={true}
         showStatus={false}
+        showThumbs={false}
       >
         {media.map((asset) => (
-          <div>
-            <img key={asset} src={asset} alt="" />
-          </div>
+          <CustomSlide key={asset} assetUrl={asset} />
         ))}
       </Carousel>
       <div className="proj-info-card">
