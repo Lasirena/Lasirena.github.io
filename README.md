@@ -1,6 +1,6 @@
-# www.alicehintonjones.com
-This is my personal portfolio website repo.
+# alinaonyx.com
 
 ## Built with:
+
 - HTML/CSS
 - JS
