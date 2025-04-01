@@ -1,4 +1,4 @@
-const projectLabelArt = 'project-label-art';
+const projectLabelPersonal = 'project-label-personal';
 const imageOverlay = document.getElementById('artboard-image-overlay');
 
 // Play Game in iframe
@@ -91,7 +91,7 @@ function filterProjects(filterCategoryLabel, filterButtonId) {
   }
 
   // Check if Artboard has to be excluded
-  if (filterCategoryLabel != projectLabelArt) {
+  if (filterCategoryLabel != projectLabelPersonal) {
     hideArtboard();
   }
 
